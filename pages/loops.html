@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEADER -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> C++ Loops</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <style>
+        .hero-text h1 {
+          text-shadow: 2px 2px 0 #000;
+        }
+        div {
+            padding: 15px;
+        }
+    </style>
+</head>
+<!-- HEADER -->
+
+<body>
+    <header>
+        <!-- LOGO -->
+        <div class="logo-container" style="text-align: left;">
+            <a href="index.html">
+                <img src="../images/logo.png" alt="Logo" class="logo" style="display: block; margin: 0 auto;">
+            </a>
+        </div>
+        <!-- NAV BAR -->
+        <nav class="navbar">
+            <ul class="list" id="nav-bar">
+                <li class="nav-box"><a class="nav-box" href="../pages.tutorial1.html">Variables</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/tutorial2.html">Conditionals</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/tutorial3.html">Loops</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/tutorial4.html">Functions</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/tutorial5.html">Classes</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/aboutus.html">About Us</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/donate.html">Donate</a></li>
+            </ul>
+        </nav>
+        <!-- background image -->
+        <!-- <img src="home.jpg" alt="neon-arcade" class="hero-image"> -->
+    </header>    
+
+    <div class="loop-intro">
+        <h1 id="donate-header">C++ Loops</h1>
+        <p class="paragraph">Often times in programming, we require some type of operation that
+            repeats over and over and over. Computers are well known for doing tasks very quickly,
+            and sometimes, those tasks need to be performed one after another after another.<br>
+            This is where loops come in. As the name implies, they allow some area of a program
+            to iterate as many times as necessary without needing to code every single line of
+            repetition. It is a powerful tool that greatly increasing the efficiency and readability
+            of code. 
+        </p><br>
+    </div>
+    <div id="loop-types">
+        <div class="loops" id="while-loop">
+            <h2>Types of Loops</h2>
+        <p>In C++, there are 3 different types of loops: for loops, while loops, and do-while loops</p><br>
+
+        <h3>While Loops</h3>
+        <p>While loops have the same structure as conditionals. The only difference
+            is that you use 'while' instead of 'if':
+        </p>
+        <p>
+           Example 1: 
+        </p>
+        <pre><code>
+            int i = 0 ;
+            while (i < 5) {
+                cout << i << endl;
+                i++;
+            }
+        </code></pre>
+        <pre><code>
+            Output:
+            0
+            1
+            2
+            3
+            4
+        </code></pre>
+        <p>
+            As you can see from the example, we have initialized a variable <code>i</code>
+            to 0. Then using the while loop, we iterate through the loop until <code>i</code> 
+            evaluates to 5. 
+            <br>Note: Once <code>i</code> evaluates to 5, <code>i</code> is checked in the while loop condition
+            and the condition fails, so the loop does not enter. Therefore, the loop
+            ends with the condition check, not at the end of the curly brace.
+        </p>
+        <p class="warning"><strong>Important: </strong>in this example, the 
+        variable used in the loops conditional <strong>must</strong> increment. 
+        Otherwise, you will have an infinite loop!</p>
+
+        <p>Example 2:</p>
+        <pre><code>
+            int number;
+            int guess = 7;
+
+            cout << "Guess the secret number (1-10): ";
+            cin >> number;
+
+            while (number != guess) {
+                if (number < guess) {
+                    cout << "Too low! Try again: ";
+                } else {
+                    cout << "Too high! Try again: ";
+                }
+                cin >> number;
+            }
+
+            cout << You guessed the number! Good job!! << endl;
+        </code></pre>
+        <pre><code>
+            Sample Output:
+            Guess the secret number (1-10): 3
+            Too low! Try again: 8
+            Too high! Try again: 5
+            Too low! Try again: 7
+            You guessed the number! Good job!!
+        </code></pre>
+        <p>This example shows a practical use of while loops: repeating until 
+            the user gives the correct input. 
+            The loop keeps asking until the condition <code>number != secret</code> 
+            becomes false.</p>
+        </div>
+        <div class="loops" id="do-while">
+            <h3>Do-While Loops</h3>
+            <p>
+                The key difference from a regular while loop is that a do-while loop always executes 
+                its code block at least one time, even if the condition is false. 
+            </p>
+            <p>Example 1:</p>
+            <pre><code>
+                int number;
+
+                do {
+                    cout << "Enter a positive number: ";
+                    cin >> number;
+                } while (number <= 0);
+
+                cout << "You entered: " << number << endl;
+            </code></pre>
+            <p>In this example, <code>Enter a positive number</code> is output 
+            before the loop ever runs. This is because of the <code>do{}</code>.<br><br>
+            <strong>Remember:</strong> a while loop checks the condition before 
+            entering the loop. A do-while loop will always execute the code block at 
+            least once.
+            </p>
+        </div>
+        <div class="loops" id="for">
+            <h3>For Loops</h3>
+            <p></p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="footer">
+            <p>&copy; CppLearn</p>
+        </div>
+    </footer>
+</body>
+</html>
