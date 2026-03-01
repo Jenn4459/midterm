@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEADER -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="c++logo.png" type="image/png">
+    <style>
+        .hero-text h1, .shop {
+          text-shadow: 2px 2px 0 #000;
+        }
+      </style>
+</head>
+<!-- HEADER -->
+
+<body>
+    <header>
+        <!-- LOGO -->
+        <div class="logo-container" style="text-align: left;">
+            <a href="index.html">
+                <img src="c++logo.png" alt="Logo" class="logo" style="display: block; margin: 0 auto;">
+            </a>
+        </div>
+        <!-- NAV BAR -->
+        <nav class="navbar">
+            <ul class="list" id="nav-bar">
+                <li class="nav-box"><a class="nav-box" href="tutorial1.html">Variables</a></li>
+                <li class="nav-box"><a class="nav-box" href="tutorial2.html">Conditionals</a></li>
+                <li class="nav-box"><a class="nav-box" href="tutorial3.html">Loops</a></li>
+                <li class="nav-box"><a class="nav-box" href="tutorial4.html">Functions</a></li>
+                <li class="nav-box"><a class="nav-box" href="tutorial5.html">Classes</a></li>
+                <li class="nav-box"><a class="nav-box" href="aboutus.html">About Us</a></li>
+                <li class="nav-box"><a class="nav-box" href="donate.html">Donate</a></li>
+            </ul>
+        </nav>
+        <!-- INTRO -->
+        <div class="intro">
+            <!-- <img src="home.jpg" alt="neon-arcade" class="hero-image"> -->
+            <div class="intro-text">
+                <h1 id="donate-header">Knowledge Shouldn't Have a Price Tag</h1>
+                <p class="paragraph">We believe every future programmer deserves 
+                    access to quality C++ education, regardless of their budget. 
+                    No paywalls, no subscription fees—just clear, visual tutorials 
+                    for anyone who wants to learn.Your support keeps our servers 
+                    running, funds new tutorial creation, and helps us reach 
+                    learners in communities where paid courses aren't an option.</p>
+            </div>
+    </header>    
+
+    <div id="donate-form">
+        <form>
+            <!-- recurring? -->
+             <h3>Donation amount</h3>
+            <fieldset>
+                <input type="radio" id="once" name="frequency" value="One-time">
+                <label for="One-time">One-time donation</label><br>
+                <input type="radio" id="repeat" name="frequency" value="recurring">
+                <label for="recurring">Recurring donation</label><br>
+            </fieldset>
+            <!-- radio buttons (how much to donate) -->
+            <fieldset>
+                <input type="radio" id="5" name="donation" value="5">
+                <label for="5">$5</label><br>
+                <input type="radio" id="10" name="donation" value="10">
+                <label for="10">$10</label><br>
+                <input type="radio" id="25" name="donation" value="25">
+                <label for="25">$25</label><br>
+                <input type="radio" id="50" name="donation" value="50">
+                <label for="50">$50</label><br>
+            </fieldset>
+            <!-- personal info for donation -->
+            <h3>Your information</h3>
+            <fieldset>
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name..."><br>
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name..."><br><br>
+
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" placeholder="Enter your email..."><br><br>
+
+                <label for="country">Country</label><br>
+                <input type="text" id="country" name="country" value="United States"><br>
+                <label for="address">Address</label><br>
+                <input type="text" id="address" name="address" placeholder="Enter your address..."><br>
+                <label for="city">City</label><br>
+                <input type="text" id="city" name="city" placeholder="Enter your city..."><br>
+                <label for="state">State</label><br>
+                <select id="state" name="state">
+                    <option id="state-abbrev">MA</option>
+                </select>
+                <label for="fname">Zip Code</label>
+                <input type="text" id="fname" name="fname" placeholder="Zipcode...">
+            </fieldset>
+            <input type="submit"></form>
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="footer">
+            <p>&copy; CppLearn</p>
+        </div>
+    </footer>
+</body>
+</html>
