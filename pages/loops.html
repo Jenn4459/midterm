@@ -22,16 +22,16 @@
     <header>
         <!-- LOGO -->
         <div class="logo-container" style="text-align: left;">
-            <a href="index.html">
+            <a href="../index.html">
                 <img src="../images/logo.png" alt="Logo" class="logo" style="display: block; margin: 0 auto;">
             </a>
         </div>
         <!-- NAV BAR -->
         <nav class="navbar">
             <ul class="list" id="nav-bar">
-                <li class="nav-box"><a class="nav-box" href="../pages.tutorial1.html">Variables</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/tutorial1.html">Variables</a></li>
                 <li class="nav-box"><a class="nav-box" href="../pages/tutorial2.html">Conditionals</a></li>
-                <li class="nav-box"><a class="nav-box" href="../pages/tutorial3.html">Loops</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/loops.html">Loops</a></li>
                 <li class="nav-box"><a class="nav-box" href="../pages/tutorial4.html">Functions</a></li>
                 <li class="nav-box"><a class="nav-box" href="../pages/tutorial5.html">Classes</a></li>
                 <li class="nav-box"><a class="nav-box" href="../pages/aboutus.html">About Us</a></li>
@@ -109,7 +109,7 @@
                 cin >> number;
             }
 
-            cout << You guessed the number! Good job!! << endl;
+            cout << "You guessed the number! Good job!!" << endl;
         </code></pre>
         <pre><code>
             Sample Output:
@@ -197,11 +197,25 @@
             <p>You can also omit requirements when necessary</p>
             <p>Example 2:</p>
             <pre><code>
-                for (; ;) {
-                    
+                for (int i = 0; ; i++) {
+                    if (i == 5) {
+                        break;
+                    }
                 }
             </code></pre>
+            <p>Or even more extremely!</p>
+            <p>Example 3:</p>
+            <pre><code>
+                for (; ;) {}
+            </code></pre>
+            <p>It's important to note that this example will produce an infinite
+                loop, as there's nothing to stop it from iterating forever.
+                You'd need a <code>break;</code> statement inside to exit.
+            </p>
         </div>
+    </div>
+    <div class="loops" id="exercises">
+        <h2>Exercises</h2>
     </div>
 
     <!-- FOOTER -->
