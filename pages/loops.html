@@ -150,7 +150,57 @@
         </div>
         <div class="loops" id="for">
             <h3>For Loops</h3>
-            <p></p>
+            <p>A for loop is the best choice when you know <strong>exactly</strong> 
+                how many times you want something to repeat.<br>
+                It 'condition' for the loop has three requirements: 
+                initialization, condition, and update. This is best explained 
+                with an example
+            </p>
+            <p>Example 1:</p>
+            <pre><code>
+                for (int i = 0; i < 5; i++) {
+                    cout << i << endl;
+                }
+            </code></pre>
+            <pre><code>
+                Output:
+                0
+                1
+                2
+                3
+                4
+            </code></pre>
+            <p>As you can see, this example produces the exact same output as 
+                example 1 of the while loop! It is often a more concise way to write
+                a loop than a while loop, as long as you know exactly how many 
+                times the loop will iterate. Now let's go over this example.<br><br>
+                Inside the parenthesis of the for loop we have the three conditions:
+                <ul>
+                    <li>Initialization: This is the <code>int i = 0;</code> It 
+                        it is possible to omit the <code>int</code>, 
+                        <strong>only</strong> if the variable was declared before
+                        the loop
+                    </li>
+                    <li>Condition: This is the terminating condition. It is the 
+                        exact same as a condition in a while loop.
+                    </li>
+                    <li>Update: Like in a while loop, you have to update 
+                        the conditional variable, but with a for loop, you can
+                        update it directly in the loops condition!
+                    </li>
+                </ul>
+                Note: As you may have noticed, there is a semicolon between each 
+                requirement. This is a required element of a for loop. A semicolon 
+                must be after the first and second requirement but 
+                <strong>not</strong> the third.<br>
+            </p>
+            <p>You can also omit requirements when necessary</p>
+            <p>Example 2:</p>
+            <pre><code>
+                for (; ;) {
+                    
+                }
+            </code></pre>
         </div>
     </div>
 
