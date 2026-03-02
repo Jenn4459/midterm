@@ -1,6 +1,7 @@
 let loop_quiz;
 let print_quiz;
 let curr;
+let question = -1;
 
 function getJSON()
 {
@@ -14,8 +15,9 @@ function getJSON()
 
 function showQuiz()
 {
+    question++;
     print_quiz = document.getElementById("exercises");
-    curr = loop_quiz[0];
+    curr = loop_quiz[question];
     let quiz_div = 
         `<div class="quiz-box">
         <h2>Exercises</h2>
@@ -59,6 +61,8 @@ function checkAns()
 
     if (curr.correct === which) {
         alert(`${curr.feedback}`);
+        print_quiz.innerHTML += 
+            `<button onclick="showQuiz()">Next</button>`
     } else if (curr.correct != which && check) {
         alert("That's incorrect, try again!");
     }
