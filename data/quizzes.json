@@ -6,7 +6,7 @@
         "code": "for(int i = 0; i < 5; i++) {\ncout << i;\n}",
         "options": ["0 times", "4 times", "5 times", "Infinite"],
         "correct": 2,
-        "feedback": "Correct! i = 0,1,2,3,4 → 5 iterations"
+        "feedback": "i = 0,1,2,3,4 → 5 iterations"
     },
     {
         "number": 2,
@@ -14,7 +14,7 @@
         "code": "for(int i = 100; i > 1; i = i/2) {\ncout << i;\n}",
         "options": ["5 times", "6 times", "7 times", "Infinite"],
         "correct": 1,
-        "feedback": "Correct! i = 100, 50, 25, 12 ,6 ,3 → 6 iterations"
+        "feedback": "i = 100, 50, 25, 12 ,6 ,3 → 6 iterations!"
     }, 
     {
         "number": 3,
@@ -22,15 +22,31 @@
         "code": "for(int i = 0; i < 50; i = i*2) {\ncout << i;\n}",
         "options": ["4 times", "5 times", "6 times", "Infinite"],
         "correct": 3,
-        "feedback": "Correct! 0 times anything is 0, so this loop in infinite!"
+        "feedback": "0 times anything is 0, so this loop in infinite!"
     },
     {
         "number": 4,
-        "question": "Do-while behavior",
+        "question": "How many times will this loop run?",
         "code": "int x = 5;\ndo { x--; } while(x > 5);",
         "options": ["0 times", "1 time", "5 times", "Infinite"],
         "correct": 1,
-        "feedback": "Correct! While x is never greater than 5, the do will always run at least once!"
+        "feedback": "While x is never greater than 5, the do will always run at least once!"
+    }, 
+    {
+        "number": 5,
+        "question": "How many times will this loop run?",
+        "code": "int i = 0;\nwhile(i < 5) {\ncout << i;\n}\ni++;",
+        "options": ["0 times", "1 time", "5 times", "Infinite"],
+        "correct": 3,
+        "feedback": "i was never updated in the loop, so it will go on forever!"
+    },
+    {
+        "number": 6,
+        "question": "How many times does this loop run?",
+        "code": "int x = 10;\nint count = 0;\n\nwhile (x > 0) {\n    x = x / 3;\n    count++;\n}\n\ncout << count;",
+        "options": ["2 times", "3 times", "4 times", "5 times"],
+        "correct": 1,
+        "feedback": "Count has no bearing on the loop so we get 10/3=3, 3/3=1, and 1/3=0 .It runs 3 times!"
     }
     ]
 }
