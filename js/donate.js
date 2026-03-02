@@ -2,7 +2,11 @@
 $(document).ready(function(){ // ensures document is fully loaded
     $('form').on('submit', function(event) { //triggers when submit is clicked
         event.preventDefault();
-        let personal = validatePersonal(); 
+        let radio = validateRadio();
+        let personal = false;
+        if (radio) {
+            personal = validatePersonal(); 
+        }
         if (personal) {
             personal = validateLoc();
         }
@@ -11,6 +15,21 @@ $(document).ready(function(){ // ensures document is fully loaded
         }
     });
 });
+
+//validate radio buttons
+function validateRadio() 
+{
+    const frequency = document.querySelector('input[name="frequency"]:checked');
+    const donation = document.querySelector('input[name="donation"]:checked');
+    if (!frequency) {
+        alert("Please choose a donation frequency");
+        return false;
+    } else if (!donation) {
+        alert("Please choose a donation amount");
+        return false;
+    }
+    return true;
+}
 
 // validates name and email
 function validatePersonal()

@@ -10,9 +10,11 @@
     <style>
         .hero-text h1, .shop {
           text-shadow: 2px 2px 0 #000;
+          text-align: center;
         }
         div {
-            padding: 15px;
+            padding: 20px;
+            text-align: center;
         }
         .logo-container {
             background-color: #627296;
@@ -20,6 +22,60 @@
         body {
             color: #c0e2ed;
             background-color: #23292b;
+        }
+        fieldset {
+            border-radius: 15px;
+            margin: 10px;
+        }
+        input[type="text"] {
+            border: 2px solid #627296;
+            background-color: rgb(77, 77, 79);
+            width: 50%;
+            height: 10%;
+            padding: 10px;
+            border-radius: 10px;
+            color: #fff;
+        }
+        input[value="United States"] {
+            color: #fff;
+        }
+        select {
+            border-radius: 10px;
+            border: 2px solid #627296;
+            background-color: rgb(77, 77, 79);
+            color: #000;
+            padding: 5px;
+            margin-right: 5px;
+        }
+        #zip {
+            width: 20%;
+            height: 7%;
+            margin-top: 10px;
+        }
+        #donate-form {
+            display: flex;
+            text-align: center;
+            width: 100%;
+            padding: 0 45px 0 45px;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            border: 2px solid #ffe;
+            background-color: rgb(40, 40, 49);
+            border-radius: 10px;
+
+        }        
+        input[name="frequency"] {
+            width: 20px;
+        }
+        input[type="submit"] {
+            margin-bottom: 5px;
+            width: 20%;
+            color: #fff;
+            background-color: #262627;
+            border-radius: 5px;
         }
     </style>
       </style>
@@ -87,10 +143,10 @@
                 <label for="fname">First Name</label><br>
                 <input type="text" id="fname" name="fname" placeholder="Enter your first name..."><br>
                 <label for="lname">Last Name</label><br>
-                <input type="text" id="lname" name="lname" placeholder="Enter your last name..."><br><br>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name..."><br><br><br>
 
                 <label for="email">Email</label><br>
-                <input type="text" id="email" name="email" placeholder="Enter your email..."><br><br>
+                <input type="text" id="email" name="email" placeholder="Enter your email..."><br><br><br>
 
                 <label for="country">Country</label><br>
                 <input type="text" id="country" name="country" value="United States"><br>
@@ -98,7 +154,7 @@
                 <input type="text" id="address" name="address" placeholder="Enter your address..."><br>
                 <label for="city">City</label><br>
                 <input type="text" id="city" name="city" placeholder="Enter your city..."><br>
-                <label for="state">State</label><br>
+                <label for="state">State&nbsp</label>
                 <select id="state" name="state">
                     <option value="">Select a State</option>
                     <option value="AL">Alabama</option>
