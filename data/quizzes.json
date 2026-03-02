@@ -3,7 +3,7 @@
     {
         "number": 1,
         "question": "How many times will this loop run?",
-        "code": "for(int i = 0; i < 5; i++) {\ncout << i;\n}",
+        "code": "for(int i = 0; i < 5; i++) {<br>&emsp;cout << i;<br>}",
         "options": ["0 times", "4 times", "5 times", "Infinite"],
         "correct": 2,
         "feedback": "i = 0,1,2,3,4 → 5 iterations"
