@@ -7,7 +7,7 @@ $(document).ready(function(){ // ensures document is fully loaded
             personal = validateLoc();
         }
         if (personal) {
-            alert("Thank you so much for your donation!!!");
+            window.location.href = "thankyou.html";
         }
     });
 });
