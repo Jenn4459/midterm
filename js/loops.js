@@ -16,13 +16,16 @@ function getJSON()
 function showQuiz()
 {
     question++;
+    if (question > 5) {
+        question = 0;
+    }
     print_quiz = document.getElementById("exercises");
     curr = loop_quiz[question];
     let quiz_div = 
         `<div class="quiz-box">
         <h2>Exercises</h2>
         <h3>${curr.question}</h3>
-        <pre>${curr.code}</pre>
+        <pre><code>${curr.code}</code></pre>
         <div class="options">
         `;
     for (let i = 0; i < curr.options.length; i++) {
