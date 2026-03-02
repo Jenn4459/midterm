@@ -1,0 +1,36 @@
+{
+    "loop-quiz": [
+    {
+        "number": 1,
+        "question": "How many times will this loop run?",
+        "code": "for(int i = 0; i < 5; i++) {\ncout << i;\n}",
+        "options": ["0 times", "4 times", "5 times", "Infinite"],
+        "correct": 2,
+        "feedback": "Correct! i = 0,1,2,3,4 → 5 iterations"
+    },
+    {
+        "number": 2,
+        "question": "How many times will this loop run?",
+        "code": "for(int i = 100; i > 1; i = i/2) {\ncout << i;\n}",
+        "options": ["5 times", "6 times", "7 times", "Infinite"],
+        "correct": 1,
+        "feedback": "Correct! i = 100, 50, 25, 12 ,6 ,3 → 6 iterations"
+    }, 
+    {
+        "number": 3,
+        "question": "How many times will this loop run?",
+        "code": "for(int i = 0; i < 50; i = i*2) {\ncout << i;\n}",
+        "options": ["4 times", "5 times", "6 times", "Infinite"],
+        "correct": 3,
+        "feedback": "Correct! 0 times anything is 0, so this loop in infinite!"
+    },
+    {
+        "number": 4,
+        "question": "Do-while behavior",
+        "code": "int x = 5;\ndo { x--; } while(x > 5);",
+        "options": ["0 times", "1 time", "5 times", "Infinite"],
+        "correct": 1,
+        "feedback": "Correct! While x is never greater than 5, the do will always run at least once!"
+    }
+    ]
+}

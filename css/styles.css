@@ -3,14 +3,14 @@ body {
 }
 
 .logo {
-    width: 30px;
+    width: 45px;
 }
 
 #nav-bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #ccccff;
+    background-color: #627296;
     display: flex;
     font-size: 15px;
 }
@@ -28,11 +28,11 @@ body {
     display: flex; 
     align-items: center; 
     justify-content: center;
-    color: #607bbe;
+    color: #4f3b5c;
     text-decoration: none;
 }
 
 .nav-box:hover {
-    background-color: grey;
-    color: white;
+    background-color: #6a7c83;
+    color: #FFF;
 }
