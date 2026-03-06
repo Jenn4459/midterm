@@ -2,220 +2,218 @@
 <html lang="en">
 <!-- HEADER -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="icon" href="/images/logo.png" type="image/png">
-    <style>
-        .hero-text h1 {
-          text-align: center;
-        }
-        .logo-container {
-            background-color: #627296;
-        }
-        fieldset {
-            border-radius: 15px;
-            margin: 10px;
-            border: none;
-            background-color: #212632;
-            text-align: left;
-            padding-left: 20px;
-        }
-        input[type="text"] {
-            border: 1px solid #374054;
-            background-color: rgb(77, 77, 79);
-            width: 90%;
-            height: 10%;
-            padding: 10px;
-            border-radius: 10px;
-            color: #fff;
-        }
-        input[value="United States"] {
-            color: #fff;
-        }
-        select {
-            border-radius: 10px;
-            border: 2px solid #627296;
-            background-color: rgb(77, 77, 79);
-            color: #000;
-            padding: 5px;
-            margin-right: 5px;
-        }
-        #zip {
-            width: 20%;
-            height: 7%;
-            margin-top: 10px;
-        }
-        #donate-form {
-            display: flex;
-            text-align: center;
-            width: 100%;
-            padding: 0 45px 0 45px;
-            box-sizing: border-box;
-            justify-content: center;
-            align-items: center;
-        }
-        form {
-            background-color: #2a3140;
-            border-radius: 10px;
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Donate</title>
+   <link rel="stylesheet" href="../css/styles.css">
+   <!-- <link rel="icon" href="/images/logo.png" type="image/png"> -->
+   <style>
+       .hero-text h1 {
+         text-align: center;
+       }
+       .logo-container {
+           background-color: #627296;
+       }
+       fieldset {
+           border-radius: 15px;
+           margin: 10px;
+           border: none;
+           background-color: #212632;
+           text-align: left;
+           padding-left: 20px;
+       }
+       input[type="text"] {
+           border: 1px solid #374054;
+           background-color: rgb(77, 77, 79);
+           width: 90%;
+           height: 10%;
+           padding: 10px;
+           border-radius: 10px;
+           color: #fff;
+       }
+       input[value="United States"] {
+           color: #fff;
+       }
+       select {
+           border-radius: 10px;
+           border: 2px solid #627296;
+           background-color: rgb(77, 77, 79);
+           color: #000;
+           padding: 5px;
+           margin-right: 5px;
+       }
+       #zip {
+           width: 20%;
+           height: 7%;
+           margin-top: 10px;
+       }
+       #donate-form {
+           display: flex;
+           text-align: center;
+           width: 100%;
+           padding: 0 45px 0 45px;
+           box-sizing: border-box;
+           justify-content: center;
+           align-items: center;
+       }
+       form {
+           background-color: #2a3140;
+           border-radius: 10px;
 
-        }        
-        input[name="frequency"] {
-            width: 20px;
-        }
-        input[type="submit"] {
-            margin-bottom: 5px;
-            width: 20%;
-            color: #fff;
-            background-color: #262627;
-            border-radius: 5px;
-        }
-    </style>
-      </style>
+       }       
+       input[name="frequency"] {
+           width: 20px;
+       }
+       input[type="submit"] {
+           margin-bottom: 5px;
+           width: 20%;
+           color: #fff;
+           background-color: #262627;
+           border-radius: 5px;
+       }
+   </style>
+     </style>
 </head>
 <!-- HEADER -->
 
+
 <body>
-    <header>
-        <!-- LOGO -->
-        <div class="logo-container" style="text-align: left;">
-            <a href="../index.html">
-                <img src="../images/logo.png" alt="Logo" class="logo" style="display: block; margin: 0 auto;">
-            </a>
-        </div>
-        <!-- NAV BAR -->
-        <nav class="navbar">
-            <ul class="list" id="nav-bar">
-                <li class="nav-box"><a class="nav-box" href="../pages/tutorial1.html">Variables</a></li>
-                <li class="nav-box"><a class="nav-box" href="../pages/tutorial2.html">Conditionals</a></li>
-                <li class="nav-box"><a class="nav-box" href="../pages/loops.html">Loops</a></li>
-                <li class="nav-box"><a class="nav-box" href="../pages/tutorial4.html">Functions</a></li>
-                <li class="nav-box"><a class="nav-box" href="../pages/tutorial5.html">Classes</a></li>
-                <li class="nav-box"><a class="nav-box" href="../pages/aboutus.html">About Us</a></li>
-                <li class="nav-box"><a class="nav-box" href="../pages/donate.html">Donate</a></li>
-            </ul>
-        </nav>
-        <!-- INTRO -->
-        <div class="intro">
-            <!-- <img src="home.jpg" alt="neon-arcade" class="hero-image"> -->
-            <div class="intro-text">
-                <h1 id="donate-header">Knowledge Shouldn't Have a Price Tag</h1>
-                <p class="paragraph">We believe every future programmer deserves 
-                    access to quality C++ education, regardless of their budget. 
-                    No paywalls, no subscription fees—just clear, visual tutorials 
-                    for anyone who wants to learn.Your support keeps our servers 
-                    running, funds new tutorial creation, and helps us reach 
-                    learners in communities where paid courses aren't an option.</p>
-            </div>
-    </header>    
+   <header>
+       <nav class="navbar">
+           <ul class="list" id="nav-bar">
+               <li class="nav-box">
+                   <a class="nav-box" href="../index.html"><img src="../images/logo.png" alt="Logo" class="logo" style="display: block; margin: 0 auto; height: 75px; width: auto; padding: 15px 25px 15px 10px;"></a></li>
+               <li class="nav-box"><a class="nav-box" href="../pages/tutorials.html">Tutorials</a></li>
+               <li class="nav-box"><a class="nav-box" href="../pages/aboutus.html">About Us</a></li>
+               <li class="nav-box"><a class="nav-box" href="../pages/donate.html">Donate</a></li>
+               <li class="nav-box"><a class="nav-box" href="../pages/index.html">Contact</a></li>
+           </ul>
+       </nav>
+       <!-- INTRO -->
+       <div class="intro">
+           <!-- <img src="home.jpg" alt="neon-arcade" class="hero-image"> -->
+           <div class="intro-text">
+               <h1 id="donate-header">Knowledge Shouldn't Have a Price Tag</h1>
+               <p class="paragraph">We believe every future programmer deserves
+                   access to quality C++ education, regardless of their budget.
+                   No paywalls, no subscription feesâ€”just clear, visual tutorials
+                   for anyone who wants to learn.Your support keeps our servers
+                   running, funds new tutorial creation, and helps us reach
+                   learners in communities where paid courses aren't an option.</p>
+           </div>
+   </header>   
 
-    <div id="donate-form">
-        <form>
-            <!-- recurring? -->
-             <h3>Donation amount</h3>
-            <fieldset>
-                <input type="radio" id="once" name="frequency" value="One-time">
-                <label for="One-time">One-time donation</label><br>
-                <input type="radio" id="repeat" name="frequency" value="recurring">
-                <label for="recurring">Recurring donation</label><br>
-            </fieldset>
-            <!-- radio buttons (how much to donate) -->
-            <fieldset>
-                <input type="radio" id="5" name="donation" value="5">
-                <label for="5">$5</label><br>
-                <input type="radio" id="10" name="donation" value="10">
-                <label for="10">$10</label><br>
-                <input type="radio" id="25" name="donation" value="25">
-                <label for="25">$25</label><br>
-                <input type="radio" id="50" name="donation" value="50">
-                <label for="50">$50</label><br>
-            </fieldset>
-            <!-- personal info for donation -->
-            <h3>Your information</h3>
-            <fieldset>
-                <label for="fname">First Name</label><br>
-                <input type="text" id="fname" name="fname" placeholder="Enter your first name..."><br>
-                <label for="lname">Last Name</label><br>
-                <input type="text" id="lname" name="lname" placeholder="Enter your last name..."><br><br><br>
 
-                <label for="email">Email</label><br>
-                <input type="text" id="email" name="email" placeholder="Enter your email..."><br><br><br>
+   <div id="donate-form">
+       <form>
+           <!-- recurring? -->
+            <h3>Donation amount</h3>
+           <fieldset>
+               <input type="radio" id="once" name="frequency" value="One-time">
+               <label for="One-time">One-time donation</label><br>
+               <input type="radio" id="repeat" name="frequency" value="recurring">
+               <label for="recurring">Recurring donation</label><br>
+           </fieldset>
+           <!-- radio buttons (how much to donate) -->
+           <fieldset>
+               <input type="radio" id="5" name="donation" value="5">
+               <label for="5">$5</label><br>
+               <input type="radio" id="10" name="donation" value="10">
+               <label for="10">$10</label><br>
+               <input type="radio" id="25" name="donation" value="25">
+               <label for="25">$25</label><br>
+               <input type="radio" id="50" name="donation" value="50">
+               <label for="50">$50</label><br>
+           </fieldset>
+           <!-- personal info for donation -->
+           <h3>Your information</h3>
+           <fieldset>
+               <label for="fname">First Name</label><br>
+               <input type="text" id="fname" name="fname" placeholder="Enter your first name..."><br>
+               <label for="lname">Last Name</label><br>
+               <input type="text" id="lname" name="lname" placeholder="Enter your last name..."><br><br><br>
 
-                <label for="country">Country</label><br>
-                <input type="text" id="country" name="country" value="United States"><br>
-                <label for="address">Address</label><br>
-                <input type="text" id="address" name="address" placeholder="Enter your address..."><br>
-                <label for="city">City</label><br>
-                <input type="text" id="city" name="city" placeholder="Enter your city..."><br>
-                <label for="state">State&nbsp</label>
-                <select id="state" name="state">
-                    <option value="">Select a State</option>
-                    <option value="AL">Alabama</option>
-                    <option value="AK">Alaska</option>
-                    <option value="AZ">Arizona</option>
-                    <option value="AR">Arkansas</option>
-                    <option value="CA">California</option>
-                    <option value="CO">Colorado</option>
-                    <option value="CT">Connecticut</option>
-                    <option value="DE">Delaware</option>
-                    <option value="FL">Florida</option>
-                    <option value="GA">Georgia</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="ID">Idaho</option>
-                    <option value="IL">Illinois</option>
-                    <option value="IN">Indiana</option>
-                    <option value="IA">Iowa</option>
-                    <option value="KS">Kansas</option>
-                    <option value="KY">Kentucky</option>
-                    <option value="LA">Louisiana</option>
-                    <option value="ME">Maine</option>
-                    <option value="MD">Maryland</option>
-                    <option value="MA">Massachusetts</option>
-                    <option value="MI">Michigan</option>
-                    <option value="MN">Minnesota</option>
-                    <option value="MS">Mississippi</option>
-                    <option value="MO">Missouri</option>
-                    <option value="MT">Montana</option>
-                    <option value="NE">Nebraska</option>
-                    <option value="NV">Nevada</option>
-                    <option value="NH">New Hampshire</option>
-                    <option value="NJ">New Jersey</option>
-                    <option value="NM">New Mexico</option>
-                    <option value="NY">New York</option>
-                    <option value="NC">North Carolina</option>
-                    <option value="ND">North Dakota</option>
-                    <option value="OH">Ohio</option>
-                    <option value="OK">Oklahoma</option>
-                    <option value="OR">Oregon</option>
-                    <option value="PA">Pennsylvania</option>
-                    <option value="RI">Rhode Island</option>
-                    <option value="SC">South Carolina</option>
-                    <option value="SD">South Dakota</option>
-                    <option value="TN">Tennessee</option>
-                    <option value="TX">Texas</option>
-                    <option value="UT">Utah</option>
-                    <option value="VT">Vermont</option>
-                    <option value="VA">Virginia</option>
-                    <option value="WA">Washington</option>
-                    <option value="WV">West Virginia</option>
-                    <option value="WI">Wisconsin</option>
-                    <option value="WY">Wyoming</option>
-                </select>
-                <label for="fname">Zip Code</label>
-                <input type="text" id="zip" name="zip" placeholder="Zipcode...">
-            </fieldset>
-            <input type="submit"></form>
-        </form>
-    </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <div id="footer">
-            <p>&copy; CppLearn</p>
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="../js/donate.js"></script>
+               <label for="email">Email</label><br>
+               <input type="text" id="email" name="email" placeholder="Enter your email..."><br><br><br>
+
+
+               <label for="country">Country</label><br>
+               <input type="text" id="country" name="country" value="United States"><br>
+               <label for="address">Address</label><br>
+               <input type="text" id="address" name="address" placeholder="Enter your address..."><br>
+               <label for="city">City</label><br>
+               <input type="text" id="city" name="city" placeholder="Enter your city..."><br>
+               <label for="state">State&nbsp</label>
+               <select id="state" name="state">
+                   <option value="">Select a State</option>
+                   <option value="AL">Alabama</option>
+                   <option value="AK">Alaska</option>
+                   <option value="AZ">Arizona</option>
+                   <option value="AR">Arkansas</option>
+                   <option value="CA">California</option>
+                   <option value="CO">Colorado</option>
+                   <option value="CT">Connecticut</option>
+                   <option value="DE">Delaware</option>
+                   <option value="FL">Florida</option>
+                   <option value="GA">Georgia</option>
+                   <option value="HI">Hawaii</option>
+                   <option value="ID">Idaho</option>
+                   <option value="IL">Illinois</option>
+                   <option value="IN">Indiana</option>
+                   <option value="IA">Iowa</option>
+                   <option value="KS">Kansas</option>
+                   <option value="KY">Kentucky</option>
+                   <option value="LA">Louisiana</option>
+                   <option value="ME">Maine</option>
+                   <option value="MD">Maryland</option>
+                   <option value="MA">Massachusetts</option>
+                   <option value="MI">Michigan</option>
+                   <option value="MN">Minnesota</option>
+                   <option value="MS">Mississippi</option>
+                   <option value="MO">Missouri</option>
+                   <option value="MT">Montana</option>
+                   <option value="NE">Nebraska</option>
+                   <option value="NV">Nevada</option>
+                   <option value="NH">New Hampshire</option>
+                   <option value="NJ">New Jersey</option>
+                   <option value="NM">New Mexico</option>
+                   <option value="NY">New York</option>
+                   <option value="NC">North Carolina</option>
+                   <option value="ND">North Dakota</option>
+                   <option value="OH">Ohio</option>
+                   <option value="OK">Oklahoma</option>
+                   <option value="OR">Oregon</option>
+                   <option value="PA">Pennsylvania</option>
+                   <option value="RI">Rhode Island</option>
+                   <option value="SC">South Carolina</option>
+                   <option value="SD">South Dakota</option>
+                   <option value="TN">Tennessee</option>
+                   <option value="TX">Texas</option>
+                   <option value="UT">Utah</option>
+                   <option value="VT">Vermont</option>
+                   <option value="VA">Virginia</option>
+                   <option value="WA">Washington</option>
+                   <option value="WV">West Virginia</option>
+                   <option value="WI">Wisconsin</option>
+                   <option value="WY">Wyoming</option>
+               </select>
+               <label for="fname">Zip Code</label>
+               <input type="text" id="zip" name="zip" placeholder="Zipcode...">
+           </fieldset>
+           <input type="submit"></form>
+       </form>
+   </div>
+
+
+   <!-- FOOTER -->
+   <footer>
+       <div id="footer">
+           <p>&copy; CppLearn</p>
+       </div>
+   </footer>
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   <script src="../js/donate.js"></script>
 </body>
 </html>
+

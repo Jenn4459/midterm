@@ -1,9 +1,16 @@
 const NUM_SQUARES = 5;
 let tutorial;
+const links = [
+    "tutorial3.html",
+    "conditional.html",
+    "loops.html",
+    "functions.html",
+    "classes.html"
+]
 
 for (let i=0; i<NUM_SQUARES; i++)
 {
-    document.write( `<div class='cell' id='${i}'><button class='button' type='button' id='button'>Start</button></div>` );
+    document.write( `<div class='cell' id='${i}'></div>` );
 }
 
 function getJSON()
@@ -28,9 +35,13 @@ function showTutorials()
             <br>
             <p class="descrip">${tutorial[i].description}</h3>
             <br>
+            <button class='button' type='button' id='button${i}'>Start</button>
             </div>
             `;
             print_tut.innerHTML = print;
+            document.getElementById(`button${i}`).addEventListener('click', function() {
+                window.location.href = links[i];
+            });
     }
 
 }
