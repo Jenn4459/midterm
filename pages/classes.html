@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEADER -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> C++ Loops</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <style>
+        .class-intro{
+            border-bottom: 2px solid #627296;
+        }
+        .example {
+            margin: 20px 0;
+            border-radius: 5px;
+            width: auto;
+        }
+        .example pre {
+            margin: 10px 0;
+            background-color: #1e2427;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            max-width: 100%;
+        }pre {
+            margin: 10px 0;
+            background-color: #1e2427;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            max-width: 100%;
+        }
+        .quiz-box {
+            border: 1px solid #001;
+            background-color: rgb(24, 31, 32);
+            border-radius: 15px;
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        button {
+            margin-top: 10px;
+            width: 20%;
+            color: #fff;
+            background-color: #262627;
+            border-radius: 5px;
+        }
+        div {
+            text-align: left;
+        }
+        code {
+            padding: 10px;
+            max-width: 75%;
+        }
+    </style>
+</head>
+
+
+
+ 
+
+    
+
+
+
+<body>
+    <header>
+        <!-- LOGO -->
+        <div class="logo-container" style="text-align: left;">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="Logo" class="logo" style="display: block; margin: 0 auto;">
+            </a>
+        </div>
+        <!-- NAV BAR -->
+        <nav class="navbar">
+            <ul class="list" id="nav-bar">
+                <li class="nav-box"><a class="nav-box" href="../pages/classes.html">Variables</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/tutorial2.html">Conditionals</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/loops.html">Loops</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/tutorial4.html">Functions</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/classes.html">Classes</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/aboutus.html">About Us</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/donate.html">Donate</a></li>
+            </ul>
+        </nav>
+        <!-- background image -->
+        <!-- <img src="home.jpg" alt="neon-arcade" class="hero-image"> -->
+    </header>    
+
+    <div id="text">
+        <div class="class-intro">
+            <h1 id="donate-header">Objects and Classes</h1>
+            <p class="paragraph">In C++ object's are declared as classes, like a blueprint. Here's an exmaple of a base class
+            </p><br>
+        </div>
+        <div id="base-class">
+        <pre><code>
+                class Animal {        // The class
+                    public:            // Access specifier
+                        string kingdom;      // Attribute
+                        bool male;          // Attribute
+                    public:        // Access specifier
+                        void noise();   // Method function declaration
+                };
+
+
+                void Animal::noise() {
+                    if(this.male){
+                        cout << "rawr |:" << endl;
+                    }
+                    else{
+                        cout << "RAWWWWRRRRR!" << endl;
+                    }
+                    
+                }
+            </code></pre>
+            </div>
+            <div id="constructors">
+             <h2> Constructors! </h2>
+                <p>Think of it like this: When you order a sandwich the constructor is like the worker behind the counter. 
+                    Instead of having to put the cheese, ham, and lettuce on the sandwich (object) yourself, 
+                    the constructor does it for you. Without it you'd have have to set each attribute manually. 
+
+                    </p>
+                    <pre><code>
+                        class Animal {        // The class
+                            public:            // Access specifier
+                                string kingdom;      // Attribute
+                                bool male = false;   // Attribute
+                            public:        // Access specifier
+                                void noise();
+                                Animal(string k, bool m){
+                                    kingdom = k
+                                    male = m
+                                }
+                        }; 
+                    </pre></code>
+            </div>
+    
+            <div class="example">
+                <h2>Example! </h2>
+                <pre><code>
+                    int main(int argc, char *argv[]){
+                        Animal dog = Dog("Animalia", false);
+                        dog.noise()
+                    }
+                            
+                </code></pre>
+                <pre><code>
+                    Sample Output:
+                    RAWWWWRRRRR!
+                </code></pre>
+                <p>This example showcases the Animal class' constructor. It set's the male parameter to false which determines the output of the noise function</p>
+
+                
+            </div>
+            </div>
+          
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/loops.js"></script>
+</body>
+</html>

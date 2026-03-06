@@ -48,5 +48,33 @@
         "correct": 1,
         "feedback": "CORRECT! Count has no bearing on the loop so we get 10/3=3, 3/3=1, and 1/3=0 .It runs 3 times!"
     }
+    ],
+    
+    "class-quiz": [
+        {
+            "number": 1,
+            "question": "What will be the output of this code?",
+            "code": "int main(int argc, char *argv[]){\n Animal dog = Animal('Animalia', true);\n dog.noise();}",
+            "options": ["meow", "rawr |:", "RAWWWWRRRRR", "rough"],
+            "correct": 1,
+            "feedback": "CORRECT! the constructor set the dog's male paramater to true so it'll make a demur rawr noise"
+        },
+        {
+            "number": 2,
+            "question": "What will be the output of this code?",
+            "code": "int main(int argc, char *argv[]){\n Animal dog = Animal();\n dog.noise();}",
+            "options": ["meow", "rawr", "RAWWWWRRRRR", "error"],
+            "correct": 2,
+            "feedback": "CORRECT! the default value for male is false so this femal dog object will make ferocious roar"
+        },
+        {
+            "number": 3,
+            "question": "What will be the output of this code?",
+            "code": "int main(int argc, char *argv[]){\n Animal funguy = Animal(male, 'Fungi');\n cout << funguy.kingdom << endl}",
+            "options": ["Plantae", "Animalia", "Fungi", "Monera"],
+            "correct": 2,
+            "feedback": "CORRECT! this "
+        }
     ]
+    
 }
