@@ -23,15 +23,16 @@
             margin: 20px 0;
         }
        .intro-text {
-            width: 60%;
+            width: 70%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
        }
        .paragraph {
-        font-family: sans-serif;
-        line-height: 1.5
+            width: 80%;
+            font-family: sans-serif;
+            line-height: 1.5
        }
        fieldset {
            border-radius: 15px;
@@ -94,7 +95,27 @@
             width: 20%;
             color: #fff;
             background-color: #262627;
+            border: 0;
             border-radius: 5px;
+       }
+       @media screen and (max-width: 600px) 
+       {
+        #zip, #state {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: auto;
+        }
+        input[type="submit"] {
+            width: 90%;
+        }
+        form {
+            width: 90%;
+        }
+        fieldset {
+            width: 90%;
+            padding: 10px;
+        }
        }
    </style>
 </head>
@@ -108,7 +129,7 @@
                <li class="nav-box home">
                    <a class="nav-box home" href="../index.html"><img src="../images/logo.png" alt="Logo" class="logo" style="display: block; margin: 0 auto; height: 75px; width: auto; padding: 15px 25px 15px 10px;"></a></li>
                <li class="nav-box"><a class="nav-box" href="../pages/tutorials.html">Tutorials</a></li>
-               <li class="nav-box"><a class="nav-box" href="../pages/aboutus.html">About Us</a></li>
+               <li class="nav-box"><a class="nav-box" href="../pages/aboutus.html">About</a></li>
                <li class="nav-box"><a class="nav-box" href="../pages/donate.html">Donate</a></li>
                <li class="nav-box"><a class="nav-box" href="../pages/index.html">Contact</a></li>
            </ul>
@@ -222,8 +243,8 @@
                    <option value="WI">Wisconsin</option>
                    <option value="WY">Wyoming</option>
                </select>
-               <label for="fname">Zip Code</label>
-               <input type="text" id="zip" name="zip" placeholder="Zipcode...">
+               <label for="fname">Zip </label>
+               <input type="text" id="zip" name="zip" placeholder="Zip...">
            </fieldset>
            <input type="submit">
        </form>

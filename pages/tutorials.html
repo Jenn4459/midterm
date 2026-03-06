@@ -47,7 +47,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
         }
 
         .button {
@@ -73,6 +72,27 @@
             margin-bottom: 10px;
             line-height: 1.5;
         }
+
+        @media screen and (max-width: 600px) {
+            .cell {
+                width: 80%;
+            }
+            
+            .image {
+                width: 70px;
+            }
+            
+            .descrip {
+                width: 95%;
+                padding: 5px;
+                margin: 5px auto;
+                line-height: 1.4; 
+            }
+            
+            .button {
+                width: 90%;
+            }
+}
     </style>
 </head>
 <!-- HEADER -->
@@ -84,7 +104,7 @@
                 <li class="nav-box home">
                     <a class="nav-box home" href="../index.html"><img src="../images/logo.png" alt="Logo" class="logo" style="display: block; margin: 0 auto; height: 75px; width: auto; padding: 15px 25px 15px 10px;"></a></li>
                 <li class="nav-box"><a class="nav-box" href="../pages/tutorials.html">Tutorials</a></li>
-                <li class="nav-box"><a class="nav-box" href="../pages/aboutus.html">About Us</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/aboutus.html">About</a></li>
                 <li class="nav-box"><a class="nav-box" href="../pages/donate.html">Donate</a></li>
                 <li class="nav-box"><a class="nav-box" href="../pages/index.html">Contact</a></li>
             </ul>
