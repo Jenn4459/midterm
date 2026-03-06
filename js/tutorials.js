@@ -8,7 +8,7 @@ for (let i=0; i<NUM_SQUARES; i++)
 
 function getJSON()
 {
-    $.getJSON("tutorials.json", 
+    $.getJSON("../data/tutorials.json", 
     function(data)
     {
         tutorial = data["tutorials"];
