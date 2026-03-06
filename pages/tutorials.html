@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEADER -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        header {
+            width: 100%;
+            background-color: #627296;
+        }
+
+        .nav-bar {
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            padding-top: 50px;
+
+        }
+
+        .grid {
+            border: 5px solid #000;
+            background-color: rgb(220, 164, 164);
+            width: 100%;
+            padding: 5px 0 5px 0px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        div {
+            text-align: center;
+            justify-content: center;
+        }
+
+        .cell {
+            width: 50%;
+            margin: 20px auto;
+            border: 1px solid #000;
+            background-color: #00343d;
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .button {
+            border: 1px solid #000;
+            background-color: rgb(166, 216, 166);
+            width: 75%;
+            padding: 10px;
+            margin: 30px 0 0 0;
+            border-radius: 10px;
+        }
+
+        .image {
+            width: 100px;
+            height: auto;
+            margin-top: 10px auto;
+        }
+
+        .descrip {
+            width: 90%;
+            text-align: center;
+            padding: 10px;
+            margin: 10px auto;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        @media screen and (max-width: 600px) {
+            .cell {
+                width: 80%;
+            }
+            
+            .image {
+                width: 70px;
+            }
+            
+            .descrip {
+                width: 95%;
+                padding: 5px;
+                margin: 5px auto;
+                line-height: 1.4; 
+            }
+            
+            .button {
+                width: 90%;
+            }
+}
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <ul class="list" id="nav-bar">
+                <li class="nav-box home">
+                    <a class="nav-box home" href="../index.html"><img src="../images/logo.png" alt="Logo" class="logo" style="display: block; margin: 0 auto; height: 75px; width: auto; padding: 15px 25px 15px 10px;"></a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/tutorials.html">Tutorials</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/aboutus.html">About Us</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/donate.html">Donate</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="head">Our Tutorials</h1>
+    <div id="grid"></div>
+    <script src="../js/tutorials.js"></script>
+
+    <!-- FOOTER -->
+   <footer>
+        <div id="footer">
+            <p>&copy; CppLearn</p>
+        </div>
+    </footer>
+</body>
+</html>

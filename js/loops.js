@@ -25,7 +25,7 @@ function showQuiz()
         `<div class="quiz-box">
         <h2>Exercises</h2>
         <h3>${curr.question}</h3>
-        <pre><code>${curr.code}</code></pre>
+        <pre class="quiz-code"><code>${curr.code}</code></pre>
         <div class="options">
         `;
     for (let i = 0; i < curr.options.length; i++) {

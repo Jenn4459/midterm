@@ -32,6 +32,7 @@ div {
     background-color: #627296;
     display: flex;
     font-size: 15px;
+    text-shadow: 0.1px 0.1px #000;
 }
 
 .nav-box {
@@ -54,6 +55,14 @@ div {
 .nav-box:hover {
     background-color: #6a7c83;
     color: #FFF;
+}
+
+.nav-box a:visited {
+    color: #fff;
+}
+
+.nav-box.home:hover {
+    background-color: #627296;
 }
 
 footer {

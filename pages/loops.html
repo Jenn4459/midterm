@@ -8,41 +8,68 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="/images/logo.png" type="image/png">
     <style>
+        .page-wrapper {
+            width: 100%;
+            padding: 0 0 20px 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
         .loop-intro{
             border-bottom: 2px solid #627296;
+            width: 100%;
+            max-width: 800px;
         }
-        .example {
-            margin: 20px 0;
+        #text {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        p {
+            width: 100%;
+            max-width: 800px;
+            font-family: sans-serif;
+            line-height: 1.5;
+            margin-left: 0;
+            margin-right: auto;
+
+        }
+        .code {
             border-radius: 5px;
-            width: auto;
-        }
-        .example pre {
-            margin: 10px 0;
+            width: fit-content;  
+            max-width: 100%;      
+            min-width: 200px;     
+            margin: 10px 0;      
             background-color: #1e2427;
-            padding: 20px;
-            border-radius: 5px;
+            padding: 10px;
             overflow-x: auto;
+        }
+        button {
+            margin-top: 10px;
+            width: 40%;
+            color: #fff;
+            background-color: #262627;
+            border-radius: 5px;
+        }
+        .quiz-code {
             max-width: 100%;
+            overflow-x: auto;
         }
         .quiz-box {
             border: 1px solid #001;
             background-color: rgb(24, 31, 32);
             border-radius: 15px;
-            width: auto;
+            width: 100%;
+            max-width: 800px;
             height: auto;
             display: flex;
             flex-direction: column;
             align-items: center; 
             justify-content: center;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-        }
-        button {
-            margin-top: 10px;
-            width: 20%;
-            color: #fff;
-            background-color: #262627;
-            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+            box-sizing: border-box;
         }
         div {
             text-align: left;
@@ -50,6 +77,11 @@
         code {
             padding: 10px;
             max-width: 75%;
+        }
+        footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
@@ -99,23 +131,22 @@
             <p>While loops have the same structure as conditionals. The only difference
                 is that you use 'while' instead of 'if':
             </p>
-            <div class ="example">
-                 <pre><code>
-                    int i = 0 ;
-                    while (i < 5) {
-                        cout << i << endl;
-                        i++;
-                    }
+            <!-- <div class ="example"> -->
+                 <pre class="code"><code>
+int i = 0 ;
+while (i < 5) {
+    cout << i << endl;
+    i++;
+}
+                 </code></pre><br>
+                 <pre class="code"><code>
+Output:
+0
+1
+2
+3
+4
                  </code></pre>
-                 <pre><code>
-                    Output:
-                    0
-                    1
-                    2
-                    3
-                    4
-                 </code></pre>
-            </div>
             <p>
                 As you can see from the example, we have initialized a variable <code>i</code>
                 to 0. Then using the while loop, we iterate through the loop until <code>i</code> 
@@ -128,34 +159,32 @@
             variable used in the loops conditional <strong>must</strong> increment. 
             Otherwise, you will have an infinite loop!</p>
     
-            <div class="example">
-                <pre><code>
-                int number;
-                int guess = 7;
-    
-                cout << "Guess the secret number (1-10): ";
-                cin >> number;
-    
-                while (number != guess) {
-                    if (number < guess) {
-                        cout << "Too low! Try again: ";
-                    } else {
-                        cout << "Too high! Try again: ";
-                    }
-                    cin >> number;
-                }
-    
-                cout << "You got it!" << endl;
+                <pre class="code"><code>
+int number;
+int guess = 7;
+
+cout << "Guess the secret number (1-10): ";
+cin >> number;
+
+while (number != guess) {
+    if (number < guess) {
+        cout << "Too low! Try again: ";
+    } else {
+        cout << "Too high! Try again: ";
+    }
+    cin >> number;
+}
+
+cout << "You got it!" << endl;
+                </code></pre><br>
+                <pre class="code"><code>
+Sample Output:
+Guess the secret number (1-10): 3
+Too low! Try again: 8
+Too high! Try again: 5
+Too low! Try again: 7
+You guessed the number! Good job!!
                 </code></pre>
-                <pre><code>
-                Sample Output:
-                Guess the secret number (1-10): 3
-                Too low! Try again: 8
-                Too high! Try again: 5
-                Too low! Try again: 7
-                You guessed the number! Good job!!
-                </code></pre>
-            </div>
             <p>This example shows a practical use of while loops: repeating until 
                 the user gives the correct input. 
                 The loop keeps asking until the condition <code>number != secret</code> 
@@ -167,18 +196,16 @@
                     The key difference from a regular while loop is that a do-while loop always executes 
                     its code block at least one time, even if the condition is false. 
                 </p>
-                <div class="example">
-                    <pre><code>
-                int number;
+                    <pre class="code"><code>
+int number;
 
-                do {
-                    cout << "Enter a positive number: ";
-                    cin >> number;
-                } while (number <= 0);
+do {
+    cout << "Enter a positive number: ";
+    cin >> number;
+} while (number <= 0);
 
-                cout << "You entered: " << number << endl;
+cout << "You entered: " << number << endl;
                     </code></pre>
-                </div>
                 <p>In this example, <code>Enter a positive number</code> is output 
                 before the loop ever runs. This is because of the <code>do{}</code>.<br><br>
                 <strong>Remember:</strong> a while loop checks the condition before 
@@ -194,21 +221,19 @@
                     initialization, condition, and update. This is best explained 
                     with an example
                 </p>
-                <div class="example">
-                    <pre><code>
-                for (int i = 0; i < 5; i++) {
-                    cout << i << endl;
-                }
+                    <pre class="code"><code>
+for (int i = 0; i < 5; i++) {
+    cout << i << endl;
+}
+                    </code></pre><br>
+                    <pre class="code"><code>
+Output:
+0
+1
+2
+3
+4
                     </code></pre>
-                    <pre><code>
-                Output:
-                0
-                1
-                2
-                3
-                4
-                    </code></pre>
-                </div>
                 <p>As you can see, this example produces the exact same output as 
                     example 1 of the while loop! It is often a more concise way to write
                     a loop than a while loop, as long as you know exactly how many 
@@ -234,21 +259,17 @@
                     <strong>not</strong> the third.<br>
                 </p>
                 <p>You can also omit requirements when necessary</p>
-                <div class="example">
-                    <pre><code>
-                    for (int i = 0; ; i++) {
-                        if (i == 5) {
-                            break;
-                        }
-                    }
+                    <pre class="code"><code>
+for (int i = 0; ; i++) {
+    if (i == 5) {
+        break;
+    }
+}
                     </code></pre>
-                </div>
                 <p>Or even more extremely!</p>
-                <div class="example">
-                    <pre><code>
-                        for (; ;) {}
+                    <pre class="code"><code>
+for (; ;) {}
                     </code></pre>
-                </div>
                 <p>It's important to note that this example will produce an infinite
                     loop, as there's nothing to stop it from iterating forever.
                     You'd need a <code>break;</code> statement inside to exit.
@@ -257,6 +278,7 @@
         </div>
         <div class="loops" id="exercises"></div>
     </div>
+</div>
 
     <!-- FOOTER -->
     <footer>
