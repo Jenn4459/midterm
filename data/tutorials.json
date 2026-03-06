@@ -1,0 +1,29 @@
+{
+    "tutorials": [
+    {
+        "icon": "variables.png",
+        "tutorial": "Variables",
+        "description": "Learn how to store and manage data in your programs using variables. Master different data types, naming conventions, and scope rules."
+    },
+    {
+        "icon": "conditionals.png",
+        "tutorial": "Conditionals",
+        "description": "Discover how to make decisions in your code with if-else statements, switch cases, and logical operators to control program flow."
+    },
+    {
+        "icon": "loops.png",
+        "tutorial": "Loops",
+        "description": "Explore repetitive execution with for loops, while loops, and do-while loops. Learn to iterate through data efficiently and avoid common pitfalls."
+    },
+    {
+        "icon": "functions.png",
+        "tutorial": "Functions",
+        "description": "Master code organization and reusability by creating functions. Understand parameters, return values, and function scope to write modular programs."
+    },
+    {
+        "icon": "classes.png",
+        "tutorial": "Classes",
+        "description": "Dive into object-oriented programming with classes. Learn about constructors, properties, methods, and how to create blueprints for objects."
+    }
+    ]
+}
