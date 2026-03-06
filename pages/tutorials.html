@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
-        /* body {
-            display: grid;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-        } */
+        header {
+            width: 100%;
+            background-color: #627296;
+        }
+
+        .nav-bar {
+            width: 100%;
+        }
 
         h1 {
             text-align: center;
@@ -96,20 +98,20 @@
 }
     </style>
 </head>
-<!-- HEADER -->
-<header>
-    <nav class="navbar">
-        <ul class="list" id="nav-bar">
-            <li class="nav-box home">
-                <a class="nav-box home" href="../index.html"><img src="../images/logo.png" alt="Logo" class="logo" style="display: block; margin: 0 auto; height: 75px; width: auto; padding: 15px 25px 15px 10px;"></a></li>
-            <li class="nav-box"><a class="nav-box" href="../pages/tutorials.html">Tutorials</a></li>
-            <li class="nav-box"><a class="nav-box" href="../pages/aboutus.html">About Us</a></li>
-            <li class="nav-box"><a class="nav-box" href="../pages/donate.html">Donate</a></li>
-            <li class="nav-box"><a class="nav-box" href="../pages/index.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
 <body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <ul class="list" id="nav-bar">
+                <li class="nav-box home">
+                    <a class="nav-box home" href="../index.html"><img src="../images/logo.png" alt="Logo" class="logo" style="display: block; margin: 0 auto; height: 75px; width: auto; padding: 15px 25px 15px 10px;"></a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/tutorials.html">Tutorials</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/aboutus.html">About Us</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/donate.html">Donate</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 class="head">Our Tutorials</h1>
     <div id="grid"></div>
     <script src="../js/tutorials.js"></script>
