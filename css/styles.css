@@ -56,6 +56,14 @@ div {
     color: #FFF;
 }
 
+.nav-box a:visited {
+    color: #fff;
+}
+
+.nav-box.home:hover {
+    background-color: #627296;
+}
+
 footer {
     text-align: center;
     background-color: #627296;

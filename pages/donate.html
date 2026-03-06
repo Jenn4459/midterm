@@ -6,13 +6,32 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Donate</title>
    <link rel="stylesheet" href="../css/styles.css">
-   <!-- <link rel="icon" href="/images/logo.png" type="image/png"> -->
    <style>
+        body {
+            overflow-x: hidden;
+        }
        .hero-text h1 {
          text-align: center;
        }
        .logo-container {
            background-color: #627296;
+       }
+       .intro {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 20px 0;
+        }
+       .intro-text {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+       }
+       .paragraph {
+        font-family: sans-serif;
+        line-height: 1.5
        }
        fieldset {
            border-radius: 15px;
@@ -21,6 +40,7 @@
            background-color: #212632;
            text-align: left;
            padding-left: 20px;
+           width: 70%
        }
        input[type="text"] {
            border: 1px solid #374054;
@@ -41,6 +61,7 @@
            color: #000;
            padding: 5px;
            margin-right: 5px;
+           width: 25%;
        }
        #zip {
            width: 20%;
@@ -59,20 +80,23 @@
        form {
            background-color: #2a3140;
            border-radius: 10px;
-
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           width: 75%;
        }       
        input[name="frequency"] {
            width: 20px;
        }
        input[type="submit"] {
-           margin-bottom: 5px;
-           width: 20%;
-           color: #fff;
-           background-color: #262627;
-           border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 5px;
+            width: 20%;
+            color: #fff;
+            background-color: #262627;
+            border-radius: 5px;
        }
    </style>
-     </style>
 </head>
 <!-- HEADER -->
 
@@ -81,8 +105,8 @@
    <header>
        <nav class="navbar">
            <ul class="list" id="nav-bar">
-               <li class="nav-box">
-                   <a class="nav-box" href="../index.html"><img src="../images/logo.png" alt="Logo" class="logo" style="display: block; margin: 0 auto; height: 75px; width: auto; padding: 15px 25px 15px 10px;"></a></li>
+               <li class="nav-box home">
+                   <a class="nav-box home" href="../index.html"><img src="../images/logo.png" alt="Logo" class="logo" style="display: block; margin: 0 auto; height: 75px; width: auto; padding: 15px 25px 15px 10px;"></a></li>
                <li class="nav-box"><a class="nav-box" href="../pages/tutorials.html">Tutorials</a></li>
                <li class="nav-box"><a class="nav-box" href="../pages/aboutus.html">About Us</a></li>
                <li class="nav-box"><a class="nav-box" href="../pages/donate.html">Donate</a></li>
@@ -96,7 +120,7 @@
                <h1 id="donate-header">Knowledge Shouldn't Have a Price Tag</h1>
                <p class="paragraph">We believe every future programmer deserves
                    access to quality C++ education, regardless of their budget.
-                   No paywalls, no subscription feesâ€”just clear, visual tutorials
+                   No paywalls, no subscription fees just clear, visual tutorials
                    for anyone who wants to learn.Your support keeps our servers
                    running, funds new tutorial creation, and helps us reach
                    learners in communities where paid courses aren't an option.</p>
@@ -201,7 +225,7 @@
                <label for="fname">Zip Code</label>
                <input type="text" id="zip" name="zip" placeholder="Zipcode...">
            </fieldset>
-           <input type="submit"></form>
+           <input type="submit">
        </form>
    </div>
 
