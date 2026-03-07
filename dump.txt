@@ -1,0 +1,24 @@
+     <div function=function-intro>
+            <h1 id=donate-header>Functions</h1>
+            <p function=paragraph>Functions are a way to run predefinied code.
+                They increase code reusability by allowing you to rerun large blocks of code with one line, 
+                readability by associating a name with a procedure of code, control flow, and iteration through recursion.
+            </p><br>
+        </div>
+        <div id=base-function>
+        <pre><code>
+                // Create a function
+                int double(int a) {
+                    return a + a
+                }
+                
+                int main() {
+                    // call the function and print it's output
+                    output = double(int a)
+                    cout <<  output << endl
+                }
+                
+            </code></pre>
+            <p function=warning><strong>Important: </strong> Each object's attributes are initialized to a defult value. For bool it's false, and string it's . 
+                If the user doesn't specify a value then the attributes will be set to their respective default value</p>
+            </div>

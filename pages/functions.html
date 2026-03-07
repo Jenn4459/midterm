@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEADER -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> C++ Loops</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <style>
+        .class-intro{
+            border-bottom: 2px solid #627296;
+        }
+        .example {
+            margin: 20px 0;
+            border-radius: 5px;
+            width: auto;
+        }
+        .example pre {
+            margin: 10px 0;
+            background-color: #1e2427;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            max-width: 100%;
+        }pre {
+            margin: 10px 0;
+            background-color: #1e2427;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            max-width: 100%;
+        }
+        .quiz-box {
+            border: 1px solid #001;
+            background-color: rgb(24, 31, 32);
+            border-radius: 15px;
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        button {
+            margin-top: 10px;
+            width: 20%;
+            color: #fff;
+            background-color: #262627;
+            border-radius: 5px;
+        }
+        div {
+            text-align: left;
+        }
+        code {
+            padding: 10px;
+            max-width: 75%;
+        }
+    </style>
+</head>
+
+
+
+ 
+
+    
+
+
+
+<body>
+    <header>
+        <!-- LOGO -->
+        <div class="logo-container" style="text-align: left;">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="Logo" class="logo" style="display: block; margin: 0 auto;">
+            </a>
+        </div>
+        <!-- NAV BAR -->
+        <nav class="navbar">
+            <ul class="list" id="nav-bar">
+                <li class="nav-box"><a class="nav-box" href="../pages/variables.html">Variables</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/conditionals.html">Conditionals</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/loops.html">Loops</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/functions.html">Functions</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/classes.html">Classes</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/aboutus.html">About Us</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/donate.html">Donate</a></li>
+            </ul>
+        </nav>
+        <!-- background image -->
+        <!-- <img src="home.jpg" alt="neon-arcade" class="hero-image"> -->
+    </header>    
+
+    <div id="text">
+        <div class="class-intro">
+            <p class="paragraph">
+            </p><br>
+        </div>
+        <div class=function-intro>
+            <h1 id=donate-header>Functions</h1>
+            <p class=paragraph>Functions are a way to run predefinied code.
+                They increase code reusability by allowing you to rerun large blocks of code with one line, 
+                readability by associating a name with a procedure of code, control flow, and iteration through recursion.
+            </p><br>
+        </div>
+            <div id=base-function>
+            <pre><code>
+                    // Create a function
+                    int double(int a) {
+                        return a + a
+                    }
+                    
+                    int main() {
+                        // call the function and print it's output
+                        output = double(int a)
+                        cout <<  output << endl
+                    }
+                    
+            </code></pre>
+            <p> <strong> Important: </strong> Each function has a decleration which you can think of as a contract. 
+                The above function is declared as int type, meaning it returns an int. If it had no return type it would ve a void function.
+            </div>
+
+            <div id="argspars">
+             <h2> Parameters (or arguments)! </h2>
+                <p> The second part of a fucntion decleration are it's parameters. The above fucntion has one parameter which is an int. The function below (foo) has two parameters:
+                    a bool and string
+
+                    </p>
+                    <pre><code>
+                        string foo(string s, bool b){
+                            if b:
+                                return string
+                            else: 
+                                return "false"
+                        } 
+
+                        int main() {
+                            cout << foo(true, "argument") << endl
+                        }
+                    </pre></code>
+                    <pre><code>
+                        Sameple Output:
+                        argument
+                    </code></pre>
+
+                    <p>Technically arguments and parameters are different. In the above example b and s are parameters, whereas the actual values passed to the function such as "argument" or true or arguments./p>
+            </div>
+
+
+
+            <div id="constructors">
+                <h2> Recursion! </h2>
+                <p>The coolest use of functions is recursion! When a function calls itself within in the function we call that function recursive. 
+                
+                    const result = fib(4);
+                    
+                    </p>
+                    <pre><code>
+                        int fib(int n) {
+                            if (n <= 1) {
+                                return n;   // base cases: fib(0)=0, fib(1)=1
+                            }
+
+                            return fib(n - 1) + fib(n - 2);
+                        }
+
+                        int main(){
+                            fib(5)
+                        }
+
+                    </pre></code>
+
+                    <p>When thinking about recursion it's helpful to think from the bottom up. Follow the call stack below to see how the function works up from it's base case (return n)</p>
+                    <p id="callstack"></p>
+
+                    <script>
+                    function fib(n, stack = [], calls = {}) {
+                        const currentStack = [...stack, `fib(${n})`];
+                        const key = currentStack.join(" → ");
+                    
+                        calls[key] = { n: n };
+                    
+                        if (n <= 1) return { value: 1, calls };
+                    
+                        const left = fib(n - 1, currentStack, calls);
+                        const right = fib(n - 2, currentStack, calls);
+                    
+                        return { value: left.value + right.value, calls };
+                    }
+                    
+                    let result = fib(5);
+                    
+                    document.write('<p id="callstack">');
+                    
+                    for (const key in result.calls) {
+                        document.write(key + "<br>");
+                    }
+                    
+                    document.write('</p>');
+                    </script>
+
+           </div>
+
+         
+    
+            <div class="example">
+                <h2>Example! </h2>
+                <pre><code>
+                    int main(int argc, char *argv[]){
+                        Animal animal = Animal();
+
+                        Animal dog = Animal("Animalia", false);
+
+                    }
+                            
+                </code></pre>
+                <pre><code>
+                    Sample Output:
+                    RAWWWWRRRRR!
+
+                </code></pre>
+
+                <p>This example showcases the Animal class' constructor. It set's the male parameter to false which determines the output of the noise function</p>
+
+            </div>
+
+            <div id="inheritance">
+                <h2> Inheritance! </h2>
+                <p> Inheritance is where the benefits of object oriented coding shines through, they allow you to define new classes by reusing old classes. 
+                    This not only keeps you from repeating yourself but elegantly signifies relation between objects. </p>
+                    <pre><code>
+
+                        class Fungus: public Animal{
+                            public:
+                            Fungus(bool m){
+                                kingdom = "fungus"
+                                male = m
+                            }
+                        };
+                    </pre></code>
+                    <p> The Fungui class inherits the Animal class but uses a constructor that automatically sets the object's animal attribute to "fungus"</p>
+           </div>
+
+           <div class="example">
+                <h2>Example! </h2>
+                <pre><code>
+                    int main(int argc, char *argv[]){
+                        
+                    }
+ 
+                </code></pre>
+                <p>This example showcases that all Fungus objects are also Animals objects. That's why we can set an Animal variable to be equal to the object returned by the Fungus class constructor.
+        </div>
+
+
+            
+            <div class="functions" id="exercises"></div>
+
+        </div>
+          
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/functions.js"></script>
+</body>
+</html>
