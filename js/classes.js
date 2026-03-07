@@ -5,6 +5,7 @@ let question = -1;
 
 function getJSON()
 {
+
     $.getJSON("../data/quizzes.json", 
     function(data)
     {

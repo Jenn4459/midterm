@@ -65,7 +65,7 @@
             "code": "int main(int argc, char *argv[]){\n Animal dog = Animal();\n dog.noise();}",
             "options": ["meow", "rawr", "RAWWWWRRRRR", "error"],
             "correct": 2,
-            "feedback": "CORRECT! the default value for male is false so this femal dog object will make ferocious roar"
+            "feedback": "CORRECT! the default value for male is false so this female dog object will make ferocious roar"
         },
         {
             "number": 3,
@@ -73,7 +73,15 @@
             "code": "int main(int argc, char *argv[]){\n Animal funguy = Animal(male, 'Fungi');\n cout << funguy.kingdom << endl}",
             "options": ["Plantae", "Animalia", "Fungi", "Monera"],
             "correct": 2,
-            "feedback": "CORRECT! this "
+            "feedback": "CORRECT! because kingdom is a public attribute we can access it and upon printing will see it's set to the previous value passed to the constructor"
+        },
+        {
+            "number": 3,
+            "question": "What will be the output of this code?",
+            "code": "int main(int argc, char *argv[]){\n Fungus funguy = Fungus(male);\n cout << funguy.kingdom << endl}",
+            "options": ["Plantae", "Animalia", "Fungi", "Monera"],
+            "correct": 2,
+            "feedback": "CORRECT! the Fungus constructor automatically sets the kingdom field to fungui"
         }
     ]
     

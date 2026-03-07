@@ -82,9 +82,9 @@
         <nav class="navbar">
             <ul class="list" id="nav-bar">
                 <li class="nav-box"><a class="nav-box" href="../pages/classes.html">Variables</a></li>
-                <li class="nav-box"><a class="nav-box" href="../pages/tutorial2.html">Conditionals</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/conditionals.html">Conditionals</a></li>
                 <li class="nav-box"><a class="nav-box" href="../pages/loops.html">Loops</a></li>
-                <li class="nav-box"><a class="nav-box" href="../pages/tutorial4.html">Functions</a></li>
+                <li class="nav-box"><a class="nav-box" href="../pages/functions.html">Functions</a></li>
                 <li class="nav-box"><a class="nav-box" href="../pages/classes.html">Classes</a></li>
                 <li class="nav-box"><a class="nav-box" href="../pages/aboutus.html">About Us</a></li>
                 <li class="nav-box"><a class="nav-box" href="../pages/donate.html">Donate</a></li>
@@ -97,7 +97,7 @@
     <div id="text">
         <div class="class-intro">
             <h1 id="donate-header">Objects and Classes</h1>
-            <p class="paragraph">In C++ object's are declared as classes, like a blueprint. Here's an exmaple of a base class
+            <p class="paragraph">In C++ objects are declared as classes, like a blueprint. Here's an example of a base class
             </p><br>
         </div>
         <div id="base-class">
@@ -121,9 +121,34 @@
                     
                 }
             </code></pre>
+            <p class="warning"><strong>Important: </strong> Each object's attributes are initialized to a defult value. For bool it's false, and string it's "". 
+                If the user doesn't specify a value then the attributes will be set to their respective default value</p>
             </div>
             <div id="constructors">
              <h2> Constructors! </h2>
+                <p>Think of it like this: When you order a sandwich the constructor is like the worker behind the counter. 
+                    Instead of having to put the cheese, ham, and lettuce on the sandwich (object) yourself, 
+                    the constructor does it for you. Without it you'd have have to set each attribute manually. 
+
+                    </p>
+                    <pre><code>
+                        class Animal {        // The class
+                            public:            // Access specifier
+                                string kingdom;      // Attribute
+                                bool male = false;   // Attribute
+                            public:        // Access specifier
+                                void noise();
+                                Animal(string k, bool m){
+                                    kingdom = k;
+                                    male = m;
+                                }
+                        }; 
+                    </pre></code>
+            </div>
+
+
+            <div id="constructors">
+                <h2> Constructors! </h2>
                 <p>Think of it like this: When you order a sandwich the constructor is like the worker behind the counter. 
                     Instead of having to put the cheese, ham, and lettuce on the sandwich (object) yourself, 
                     the constructor does it for you. Without it you'd have have to set each attribute manually. 
@@ -142,29 +167,82 @@
                                 }
                         }; 
                     </pre></code>
-            </div>
+                    <p> classes can also have overloaded or multiple constructors as long as they have unique declerations</p>
+                    <pre><code>
+                        class Animal {        // The class
+                            public:            // Access specifier
+                                string kingdom;      // Attribute
+                                bool male = false;   // Attribute
+                            public:        // Access specifier
+                                void noise();
+                                Animal(string k, bool m){
+                                    kingdom = k
+                                    male = m
+                                }
+                                Animal(){
+                                }
+                        }; 
+                    </pre></code>
+           </div>
     
             <div class="example">
                 <h2>Example! </h2>
                 <pre><code>
                     int main(int argc, char *argv[]){
-                        Animal dog = Dog("Animalia", false);
-                        dog.noise()
+                        Animal animal = Animal();
+
+                        Animal dog = Animal("Animalia", false);
+
                     }
                             
                 </code></pre>
                 <pre><code>
                     Sample Output:
                     RAWWWWRRRRR!
+
+                    Sample Output:
+                    RAWWWWRRRRR!
                 </code></pre>
                 <p>This example showcases the Animal class' constructor. It set's the male parameter to false which determines the output of the noise function</p>
 
-                
             </div>
-            </div>
+
+            <div id="inheritance">
+                <h2> Inheritance! </h2>
+                <p> Inheritance is where the benefits of object oriented coding shines through, they allow you to define new classes by reusing old classes. 
+                    This not only keeps you from repeating yourself but elegantly signifies relation between objects. </p>
+                    <pre><code>
+
+                        class Fungus: public Animal{
+                            public:
+                            Fungus(bool m){
+                                kingdom = "fungus"
+                                male = m
+                            }
+                        };
+                    </pre></code>
+                    <p> The Fungui class inherits the Animal class but uses a constructor that automatically sets the object's animal attribute to "fungus"</p>
+           </div>
+
+           <div class="example">
+                <h2>Example! </h2>
+                <pre><code>
+                    int main(int argc, char *argv[]){
+                        
+                    }
+ 
+                </code></pre>
+                <p>This example showcases that all Fungus objects are also Animals objects. That's why we can set an Animal variable to be equal to the object returned by the Fungus class constructor.
+        </div>
+
+
+            
+            <div class="classes" id="exercises"></div>
+
+        </div>
           
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="../js/loops.js"></script>
+    <script src="../js/classes.js"></script>
 </body>
 </html>
