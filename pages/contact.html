@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- HEADER -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate</title>
+    <title> Contact CppLearn</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="/images/logo.png" type="image/png">
     <style>
-        .hero-text h1, .shop {
-          text-shadow: 2px 2px 0 #000;
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
         }
-        div {
-            padding: 15px;
-        }
-        .logo-container {
-            background-color: #627296;
-        }
-        body {
-            color: #c0e2ed;
-            background-color: #23292b;
-        }
-        #thanks {
-            font-size: 36px;
-            text-align: center;
+
+        .box {
+            padding: 20px;
         }
     </style>
-      </style>
 </head>
 <!-- HEADER -->
 
@@ -51,10 +43,35 @@
                 <li class="nav-box"><a class="nav-box" href="../pages/contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>    
+        <!-- background image -->
+        <!-- <img src="home.jpg" alt="neon-arcade" class="hero-image"> -->
+    </header>
 
-    <div id="thanks">
-        <h1>Thank you so much for donating!!!</h1>
+    <div class="container">
+        <div class="box">
+            <p> Contact CppLearn! You can contact us by filling out the form below! We'll try to get back to you as soon
+                as possible, but we're a little busy on weekends.
+        </div>
+        <div class="box">
+            <form action="/submit-contact" method="POST">
+                </p>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                <button type="submit">Send Message</button>
+        </div>
+
+    </div>
+
+
+
+
+    </form>
     </div>
 
     <!-- FOOTER -->
@@ -63,7 +80,6 @@
             <p>&copy; CppLearn</p>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="../js/donate.js"></script>
 </body>
+
 </html>
