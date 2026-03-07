@@ -9,7 +9,7 @@ function getJSON()
     $.getJSON("../data/quizzes.json", 
     function(data)
     {
-        loop_quiz = data["class-quiz"];
+        loop_quiz = data["function-quiz"];
         showQuiz();
     })
 }

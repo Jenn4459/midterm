@@ -175,7 +175,6 @@
                     </pre></code>
 
                     <p>When thinking about recursion it's helpful to think from the bottom up. Follow the call stack below to see how the function works up from it's base case (return n)</p>
-                    <p id="callstack"></p>
 
                     <script>
                     function fib(n, stack = [], calls = {}) {
@@ -191,8 +190,9 @@
                     
                         return { value: left.value + right.value, calls };
                     }
-                    
-                    let result = fib(5);
+
+                    // result is an associative array
+                    result = fib(5);
                     
                     document.write('<p id="callstack">');
                     
@@ -203,64 +203,14 @@
                     document.write('</p>');
                     </script>
 
+                    <p class="warning">If a recursive function never reaches its base case i.e return something other than another function call, it will result in an <strong> infinite loop </strong> </p>
+
+                    <div class="classes" id="exercises"></div>
+
+
            </div>
 
          
-    
-            <div class="example">
-                <h2>Example! </h2>
-                <pre><code>
-                    int main(int argc, char *argv[]){
-                        Animal animal = Animal();
-
-                        Animal dog = Animal("Animalia", false);
-
-                    }
-                            
-                </code></pre>
-                <pre><code>
-                    Sample Output:
-                    RAWWWWRRRRR!
-
-                </code></pre>
-
-                <p>This example showcases the Animal class' constructor. It set's the male parameter to false which determines the output of the noise function</p>
-
-            </div>
-
-            <div id="inheritance">
-                <h2> Inheritance! </h2>
-                <p> Inheritance is where the benefits of object oriented coding shines through, they allow you to define new classes by reusing old classes. 
-                    This not only keeps you from repeating yourself but elegantly signifies relation between objects. </p>
-                    <pre><code>
-
-                        class Fungus: public Animal{
-                            public:
-                            Fungus(bool m){
-                                kingdom = "fungus"
-                                male = m
-                            }
-                        };
-                    </pre></code>
-                    <p> The Fungui class inherits the Animal class but uses a constructor that automatically sets the object's animal attribute to "fungus"</p>
-           </div>
-
-           <div class="example">
-                <h2>Example! </h2>
-                <pre><code>
-                    int main(int argc, char *argv[]){
-                        
-                    }
- 
-                </code></pre>
-                <p>This example showcases that all Fungus objects are also Animals objects. That's why we can set an Animal variable to be equal to the object returned by the Fungus class constructor.
-        </div>
-
-
-            
-            <div class="functions" id="exercises"></div>
-
-        </div>
           
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

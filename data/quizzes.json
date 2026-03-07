@@ -83,6 +83,34 @@
             "correct": 2,
             "feedback": "CORRECT! the Fungus constructor automatically sets the kingdom field to fungui"
         }
+    ],
+
+    "function-quiz": [
+        {
+            "number": 3,
+            "question": "What type of value will this function return according to it's decleration?",
+            "code": "void foo()",
+            "options": ["int", "bool", "string", "None"],
+            "correct": 3,
+            "feedback": "CORRECT! void function's return no values. They usually change the programs sate, modify one of their arguments, or print a value"
+        },
+        {
+            "number": 3,
+            "question": "Is false an argument or parameter",
+            "code": "int foo(bool a);\n foo(false);",
+            "options": ["argument", "parameter", "both", "neither"],
+            "correct": 0,
+            "feedback": "CORRECT! because this value is being passed into the function's paramater it's an argument"
+        },
+        {
+            "number": 3,
+            "question": "What is the result of running the following code",
+            "code": "int foo(bool a){\n return foo(a);\n }\nfoo(1)",
+            "options": ["0", "1", "No result", "Infinite Loop"],
+            "correct": 3,
+            "feedback": "CORRECT! This function never reaches a base case. In other words it never returns an actual value"
+        }
+
     ]
     
 }
