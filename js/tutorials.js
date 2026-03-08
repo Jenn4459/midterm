@@ -1,11 +1,11 @@
 const NUM_SQUARES = 5;
 let tutorial;
 const links = [
-    "tutorial3.html",
-    "conditional.html",
-    "loops.html",
-    "functions.html",
-    "classes.html"
+    "../pages/variables.html",
+    "../pages/conditionals.html",
+    "../pages/loops.html",
+    "../pages/functions.html",
+    "../pages/classes.html"
 ]
 
 for (let i=0; i<NUM_SQUARES; i++)
