@@ -111,6 +111,49 @@
             "feedback": "CORRECT! This function never reaches a base case. In other words it never returns an actual value"
         }
 
+    ],
+
+    "variable-quiz": [
+        {
+            "number": 1,
+            "question": "Which data type would you use to store the value 3.14?",
+            "code": "",
+            "options": ["int", "bool", "double", "char"],
+            "correct": 2,
+            "feedback": "CORRECT! double is used to store decimal numbers with high precision."
+        },
+        {
+            "number": 2,
+            "question": "What is wrong with this variable name?",
+            "code": "int 2fast = 10;",
+            "options": ["Nothing, it is valid", "Variable names cannot start with a number", "int is the wrong type", "The value 10 is invalid"],
+            "correct": 1,
+            "feedback": "CORRECT! Variable names must start with a letter or underscore, not a number."
+        },
+        {
+            "number": 3,
+            "question": "What will this code output?",
+            "code": "int x = 5;<br>&emsp;int y = 2;<br>&emsp;cout << x / y;",
+            "options": ["2.5", "2", "3", "Error"],
+            "correct": 1,
+            "feedback": "CORRECT! Since both variables are ints, this is integer division and the decimal is dropped."
+        },
+        {
+            "number": 4,
+            "question": "Which keyword makes a variable's value unchangeable?",
+            "code": "",
+            "options": ["static", "final", "const", "fixed"],
+            "correct": 2,
+            "feedback": "CORRECT! const declares a constant — its value cannot be changed after it is set."
+        },
+        {
+            "number": 5,
+            "question": "What is the value of x after this code runs?",
+            "code": "int x;<br>&emsp;x = 100;",
+            "options": ["0", "undefined", "100", "Error"],
+            "correct": 2,
+            "feedback": "CORRECT! x is declared first then initialized to 100 on the next line."
+        }
     ]
     
 }
