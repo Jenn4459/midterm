@@ -7,29 +7,71 @@
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="icon" href="/images/logo.png" type="image/png">
   <style>
+    html, body {
+      overflow-x: hidden;
+      width: 100%;
+    }
+    .page-wrapper {
+      width: 100%;
+      padding: 0 0 20px 0;
+      margin: 0;
+      overflow-x: hidden;
+    }
     .class-intro {
       border-bottom: 2px solid #627296;
+      width: 100%;
+      max-width: 800px;
     }
-    .example {
-      margin: 20px 0;
+    #text {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    p {
+      width: 100%;
+      max-width: 800px;
+      font-family: sans-serif;
+      line-height: 1.5;
+      margin-left: 0;
+      margin-right: auto;
+    }
+    .code {
       border-radius: 5px;
-      width: auto;
-    }
-    .example pre {
+      width: fit-content;
+      max-width: 100%;
+      min-width: 200px;
       margin: 10px 0;
       background-color: #1e2427;
-      padding: 20px;
-      border-radius: 5px;
+      padding: 10px;
       overflow-x: auto;
-      max-width: 100%;
     }
-    pre {
-      margin: 10px 0;
-      background-color: #1e2427;
-      padding: 20px;
+    button {
+      margin-top: 10px;
+      width: 40%;
+      color: #fff;
+      background-color: #262627;
       border-radius: 5px;
-      overflow-x: auto;
+    }
+    .quiz-code {
       max-width: 100%;
+      overflow-x: auto;
+    }
+    .quiz-box {
+      border: 1px solid #001;
+      background-color: rgb(24, 31, 32);
+      border-radius: 15px;
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      margin: 20px auto;
+      box-sizing: border-box;
     }
     div {
       text-align: left;
@@ -37,6 +79,11 @@
     code {
       padding: 10px;
       max-width: 75%;
+    }
+    footer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
   </style>
 </head>
@@ -57,16 +104,13 @@
 
   <div id="text">
     <div class="class-intro">
-      <p class="paragraph"></p><br>
-    </div>
-
-    <div class="function-intro">
       <h1>Variables &amp; Data Types</h1>
       <p class="paragraph">Variables are named locations in memory that hold a value. In C++, you must declare a variable's type before using it. They are fundamental to every program — without them, there would be no way to store or manipulate data.</p><br>
     </div>
 
     <div id="common-types">
       <h2>Common Data Types</h2>
+      <p>C++ has several built-in data types. Here are the most common ones:</p>
       <ul style="list-style: none; padding: 0;">
         <li><strong>int</strong> – Whole numbers (e.g. 0, 42)</li>
         <li><strong>double</strong> – Decimal numbers (e.g. 3.14)</li>
@@ -74,19 +118,19 @@
         <li><strong>bool</strong> – True or false</li>
         <li><strong>string</strong> – A sequence of characters (text)</li>
       </ul>
-      <pre><code>
-        int age = 20;
-        double gpa = 3.85;
-        string major = "Computer Science";
+      <pre class="code"><code>
+int age = 20;
+double gpa = 3.85;
+string major = "Computer Science";
       </code></pre>
     </div>
 
     <div id="declaring">
       <h2>Declaring vs. Initializing</h2>
       <p>You can declare a variable without giving it a value right away, then assign it later:</p>
-      <pre><code>
-        int score;
-        score = 100;
+      <pre class="code"><code>
+int score;
+score = 100;
       </code></pre>
     </div>
 
@@ -102,18 +146,24 @@
 
     <div id="constants">
       <h2>Constants</h2>
-      <p>Use <code>const</code> when a value should never change:</p>
-      <pre><code>
-        const double PI = 3.14159;
-        const int MAX_STUDENTS = 30;
+      <p>Use const when a value should never change:</p>
+      <pre class="code"><code>
+const double PI = 3.14159;
+const int MAX_STUDENTS = 30;
       </code></pre>
     </div>
+
+    <div id="exercises"></div>
 
   </div>
 
   <footer>
-    <p>&copy; CppLearn</p>
+    <div id="footer">
+      <p>&copy; CppLearn</p>
+    </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="../js/variables.js"></script>
 </body>
 </html>
