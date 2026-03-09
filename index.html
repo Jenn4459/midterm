@@ -5,9 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LearnC++ – Home</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .hero-text {
+      background-image: url('images/homepagebg.avif');
+      background-size: cover;
+      background-position: center;
+      padding: 60px 40px;
+      text-align: center;
+      border-bottom: 2px solid #627296;
+    }
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    .hero-text a {
+      display: inline-block;
+      margin: 5px;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #627296;
+      color: #fff;
+    }
+    .hero-text a:hover {
+      background-color: #6a7c83;
+    }
+    #text {
+      padding: 40px;
+    }
+    #text h2 {
+      margin-bottom: 20px;
+    }
+    .topic-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .topic-card {
+      background-color: #1e2427;
+      border: 1px solid #627296;
+      border-radius: 8px;
+      padding: 20px 30px;
+      text-decoration: none;
+      color: #c0e2ed;
+      font-weight: bold;
+      min-width: 140px;
+      text-align: center;
+    }
+    .topic-card:hover {
+      background-color: #627296;
+      color: #fff;
+    }
+    .about-section {
+      border-top: 2px solid #627296;
+      padding: 40px;
+      text-align: center;
+    }
+    .about-section p {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+  </style>
 </head>
 <body>
-
   <nav class="navbar">
     <ul class="list" id="nav-bar">
         <li class="nav-box home">
@@ -29,12 +97,19 @@
     </div>
 
     <div id="text">
-        <h2>What You'll Learn</h2>
-        <a href="pages/classes.html">Classes</a>
-        <a href="pages/conditionals.html">Conditionals</a>
-        <a href="pages/functions.html">Functions</a>
-        <a href="pages/loops.html">Loops</a>
-        <a href="pages/variables.html">Variables</a>
+      <h2>What You'll Learn</h2>
+      <div class="topic-grid">
+        <a href="pages/classes.html" class="topic-card">Classes</a>
+        <a href="pages/conditionals.html" class="topic-card">Conditionals</a>
+        <a href="pages/functions.html" class="topic-card">Functions</a>
+        <a href="pages/loops.html" class="topic-card">Loops</a>
+        <a href="pages/variables.html" class="topic-card">Variables</a>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <h2>Why Learn C++?</h2>
+      <p>C++ is one of the most powerful and widely used programming languages in the world. It is used in game development, operating systems, embedded systems, and high-performance applications. Learning C++ gives you a deep understanding of how computers work and sets a strong foundation for any programming career.</p>
     </div>
   </main>
 
@@ -42,7 +117,5 @@
     <a href="index.html"><img src="images/logo.png" alt="LearnC++ Logo" class="logo" /></a>
     <p>&copy; CppLearn</p>
   </footer>
-
 </body>
 </html>
-
