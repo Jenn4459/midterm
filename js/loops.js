@@ -3,6 +3,7 @@ let print_quiz;
 let curr;
 let question = -1;
 
+// getting the quiz from the json file
 function getJSON()
 {
     $.getJSON("../data/quizzes.json", 
@@ -13,6 +14,7 @@ function getJSON()
     })
 }
 
+// displays quiz
 function showQuiz()
 {
     question++;
@@ -21,6 +23,7 @@ function showQuiz()
     }
     print_quiz = document.getElementById("exercises");
     curr = loop_quiz[question];
+    // for the quiz box and curr question/code
     let quiz_div = 
         `<div class="quiz-box">
         <h2>Exercises</h2>
@@ -28,6 +31,7 @@ function showQuiz()
         <pre class="quiz-code"><code>${curr.code}</code></pre>
         <div class="options">
         `;
+    //for the answer options for each question
     for (let i = 0; i < curr.options.length; i++) {
         quiz_div += 
             `
@@ -37,6 +41,7 @@ function showQuiz()
             </div>
             `;
     }
+    // for the button to check the answer
     quiz_div += 
         `
         </div>
@@ -46,6 +51,7 @@ function showQuiz()
     print_quiz.innerHTML = quiz_div;
 }
 
+// checks the answer provided by the user
 function checkAns()
 {
     let check = document.querySelector('input[name="quiz-ans"]:checked');

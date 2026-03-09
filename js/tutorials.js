@@ -8,11 +8,13 @@ const links = [
     "../pages/classes.html"
 ]
 
+// creating a div for each tutorial page
 for (let i=0; i<NUM_SQUARES; i++)
 {
     document.write( `<div class='cell' id='${i}'></div>` );
 }
 
+// getting the json that holds the tutorial information
 function getJSON()
 {
     $.getJSON("../data/tutorials.json", 
@@ -24,6 +26,7 @@ function getJSON()
     })
 }
 
+// displaying the tutorial
 function showTutorials()
 {
     for (let i = 0; i < NUM_SQUARES; i++) {
