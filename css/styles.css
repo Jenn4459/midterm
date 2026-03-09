@@ -70,4 +70,14 @@ footer {
     background-color: #627296;
     padding: 30px 0 30px;
     margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
