@@ -9,48 +9,72 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="/images/logo.png" type="image/png">
     <style>
-        .class-intro{
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+        .page-wrapper {
+            width: 100%;
+            padding: 0 0 20px 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .loop-intro{
             border-bottom: 2px solid #627296;
+            width: 100%;
+            max-width: 800px;
         }
-        .example {
-            margin: 20px 0;
-            border-radius: 5px;
-            width: auto;
+        #text {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box;
         }
-        .example pre {
-            margin: 10px 0;
-            background-color: #1e2427;
-            padding: 20px;
+        p {
+            width: 100%;
+            max-width: 800px;
+            font-family: sans-serif;
+            line-height: 1.5;
+            margin-left: 0;
+            margin-right: auto;
+
+        }
+        .code {
             border-radius: 5px;
-            overflow-x: auto;
-            max-width: 100%;
-        }pre {
-            margin: 10px 0;
+            width: fit-content;  
+            max-width: 100%;      
+            min-width: 200px;     
+            margin: 10px 0;      
             background-color: #1e2427;
-            padding: 20px;
-            border-radius: 5px;
+            padding: 10px;
             overflow-x: auto;
+        }
+        button {
+            margin-top: 10px;
+            width: 40%;
+            color: #fff;
+            background-color: #262627;
+            border-radius: 5px;
+        }
+        .quiz-code {
             max-width: 100%;
+            overflow-x: auto;
         }
         .quiz-box {
             border: 1px solid #001;
             background-color: rgb(24, 31, 32);
             border-radius: 15px;
-            width: auto;
+            width: 100%;
+            max-width: 800px;
             height: auto;
             display: flex;
             flex-direction: column;
             align-items: center; 
             justify-content: center;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-        }
-        button {
-            margin-top: 10px;
-            width: 20%;
-            color: #fff;
-            background-color: #262627;
-            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+            box-sizing: border-box;
         }
         div {
             text-align: left;
@@ -59,9 +83,14 @@
             padding: 10px;
             max-width: 75%;
         }
+        footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
-
+<!-- HEADER -->
 
 
  
