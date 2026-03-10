@@ -180,6 +180,14 @@
             "options": ["=","==","!=","<"],
             "correct": 1,
             "feedback": "CORRECT! == checks if two values are equal."
+        },
+        {
+            "number": 4,
+            "question": "Which operator checks inequality in a conditional?",
+            "code": "",
+            "options": ["=","==","!=","<"],
+            "correct": 3,
+            "feedback": "CORRECT! != checks if two values are equal."
         }
     ]
 }
