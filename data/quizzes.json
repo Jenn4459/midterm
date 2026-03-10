@@ -160,15 +160,15 @@
         {
             "number": 1,
             "question": "What will this code output?",
-            "code": "int x = 5;<br>if(x > 3){ cout << \"Yes\"; }",
-            "options": ["Yes","No","Error","Nothing"],
+            "code": "int x = 5;<br>if (x > 3) {<br>    cout << \"Yes\";<br>}",
+            "options": ["Yes","No","5","Nothing"],
             "correct": 0,
-            "feedback": "CORRECT! 5 is greater than 3 so the condition is true."
+            "feedback": "CORRECT! 5 is greater than 3 so the condition is true and 'yes' will be printed."
         },
         {
             "number": 2,
             "question": "What will this code output?",
-            "code": "int x = 2;<br>if(x > 3){ cout << \"A\"; } else { cout << \"B\"; }",
+            "code": "int x = 2;<br>if (x > 3) { <br>    cout << \"A\"; <br>} else { <br>cout << \"B\"; <br>}",
             "options": ["A","B","Error","Nothing"],
             "correct": 1,
             "feedback": "CORRECT! The condition is false so the else block runs."
