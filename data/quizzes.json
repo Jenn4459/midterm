@@ -154,6 +154,34 @@
             "correct": 2,
             "feedback": "CORRECT! x is declared first then initialized to 100 on the next line."
         }
+    ],
+
+    "conditional-quiz": [
+        {
+            "number": 1,
+            "question": "What will this code output?",
+            "code": "int x = 5;<br>if(x > 3){ cout << \"Yes\"; }",
+            "options": ["Yes","No","Error","Nothing"],
+            "correct": 0,
+            "feedback": "CORRECT! 5 is greater than 3 so the condition is true."
+        },
+        {
+            "number": 2,
+            "question": "What will this code output?",
+            "code": "int x = 2;<br>if(x > 3){ cout << \"A\"; } else { cout << \"B\"; }",
+            "options": ["A","B","Error","Nothing"],
+            "correct": 1,
+            "feedback": "CORRECT! The condition is false so the else block runs."
+        },
+        {
+            "number": 3,
+            "question": "Which operator checks equality?",
+            "code": "",
+            "options": ["=","==","!=","<"],
+            "correct": 1,
+            "feedback": "CORRECT! == checks if two values are equal."
+        }
     ]
-    
 }
+
+
