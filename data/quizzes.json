@@ -169,13 +169,13 @@
             "number": 2,
             "question": "What will this code output?",
             "code": "int x = 2;\nif (x > 3) {\n    cout << \"A\"; \n} else {\n    cout << \"B\";\n}",
-            "options": ["A","B","Error","Nothing"],
+            "options": ["A","B","2","Nothing"],
             "correct": 1,
             "feedback": "CORRECT! The condition is false so the else block runs."
         },
         {
             "number": 3,
-            "question": "Which operator checks equality?",
+            "question": "Which operator checks equality in a conditional?",
             "code": "",
             "options": ["=","==","!=","<"],
             "correct": 1,
