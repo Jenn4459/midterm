@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>C++ Conditionals</title>
+
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="icon" href="/images/logo.png" type="image/png">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/conditionals.js"></script>
+
+<style>
+
+html,body{
+overflow-x:hidden;
+width:100%;
+}
+
+#text{
+width:100%;
+max-width:1000px;
+margin:0 auto;
+padding:0 20px;
+box-sizing:border-box;
+}
+
+p{
+max-width:800px;
+font-family:sans-serif;
+line-height:1.5;
+}
+
+.code{
+border-radius:5px;
+background-color:#1e2427;
+padding:10px;
+overflow-x:auto;
+margin:10px 0;
+}
+
+.quiz-box{
+border:1px solid #001;
+background-color:rgb(24,31,32);
+border-radius:15px;
+width:100%;
+max-width:800px;
+padding:20px;
+margin:20px auto;
+}
+
+button{
+margin-top:10px;
+width:40%;
+background-color:#262627;
+color:#fff;
+border-radius:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+<ul class="list" id="nav-bar">
+
+<li class="nav-box home">
+<a class="nav-box home" href="../index.html">
+<img src="../images/logo.png" class="logo"
+style="display:block;margin:0 auto;height:75px;width:auto;padding:15px 25px 15px 10px;">
+</a>
+</li>
+
+<li class="nav-box"><a class="nav-box" href="../pages/tutorials.html">Tutorials</a></li>
+<li class="nav-box"><a class="nav-box" href="../pages/aboutus.html">About</a></li>
+<li class="nav-box"><a class="nav-box" href="../pages/donate.html">Donate</a></li>
+<li class="nav-box"><a class="nav-box" href="../pages/contact.html">Contact</a></li>
+
+</ul>
+</nav>
+
+</header>
+
+<div id="text">
+
+<div class="loop-intro">
+<h1>Conditionals</h1>
+
+<p class="paragraph">
+Conditionals allow programs to make decisions.
+Instead of executing every line of code sequentially,
+a program can choose different actions depending on
+whether a condition is true or false.
+</p>
+
+</div>
+
+
+<div>
+
+<h2>If Statements</h2>
+
+<p>
+The most common conditional in C++ is the <code>if</code> statement.
+If the condition evaluates to true, the code inside the block executes.
+</p>
+
+<pre class="code"><code>
+
+int age = 18;
+
+if(age >= 18){
+    cout << "You can vote";
+}
+
+</code></pre>
+
+</div>
+
+
+<div>
+
+<h2>If-Else Statements</h2>
+
+<p>
+If the condition is false, the program can execute a different block
+using the <code>else</code> statement.
+</p>
+
+<pre class="code"><code>
+
+int number = 10;
+
+if(number % 2 == 0){
+    cout << "Even";
+}
+else{
+    cout << "Odd";
+}
+
+</code></pre>
+
+</div>
+
+
+<div>
+
+<h2>Else If</h2>
+
+<p>
+Multiple conditions can be checked by chaining
+<code>else if</code> statements together.
+</p>
+
+<pre class="code"><code>
+
+int score = 85;
+
+if(score >= 90){
+    cout << "A";
+}
+else if(score >= 80){
+    cout << "B";
+}
+else{
+    cout << "C";
+}
+
+</code></pre>
+
+</div>
+
+
+<div id="exercises"></div>
+
+</div>
+
+<footer>
+
+<div id="footer">
+<img src="../images/logo.png" width="40">
+<p>© CppLearn</p>
+</div>
+
+</footer>
+
+</body>
+</html>
