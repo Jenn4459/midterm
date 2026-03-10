@@ -160,7 +160,7 @@
         {
             "number": 1,
             "question": "What will this code output?",
-            "code": "int x = 5;<br>if (x > 3) {<br>    cout << \"Yes\";<br>}",
+            "code": "int x = 5;\nif (x > 3) {\n    cout << \"Yes\";\n}",
             "options": ["Yes","No","5","Nothing"],
             "correct": 0,
             "feedback": "CORRECT! 5 is greater than 3 so the condition is true and 'yes' will be printed."
@@ -168,7 +168,7 @@
         {
             "number": 2,
             "question": "What will this code output?",
-            "code": "int x = 2;<br>if (x > 3) { <br>    cout << \"A\"; <br>} else { <br>cout << \"B\"; <br>}",
+            "code": "int x = 2;\nif (x > 3) {\n    cout << \"A\"; \n} else {\n    cout << \"B\";\n}",
             "options": ["A","B","Error","Nothing"],
             "correct": 1,
             "feedback": "CORRECT! The condition is false so the else block runs."
