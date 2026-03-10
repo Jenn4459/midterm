@@ -2,6 +2,7 @@ let loop_quiz;
 let print_quiz;
 let curr;
 let question = -1;
+let answered = false;
 
 // getting the quiz from the json file
 function getJSON()
@@ -18,6 +19,7 @@ function getJSON()
 function showQuiz()
 {
     question++;
+    answered = false;
     if (question > 5) {
         question = 0;
     }
@@ -54,6 +56,9 @@ function showQuiz()
 // checks the answer provided by the user
 function checkAns()
 {
+    if (answered) {
+        alert("You already answered! Click the 'Next' button for the next question!");
+    }
     let check = document.querySelector('input[name="quiz-ans"]:checked');
     let which;
     if (!check) {
@@ -69,9 +74,12 @@ function checkAns()
     }
 
     if (curr.correct === which) {
+        answered = true;
         alert(`${curr.feedback}`);
+        if (!document.querySelector('.quiz-box button[onclick="showQuiz()"]')) {
         print_quiz.innerHTML += 
             `<button onclick="showQuiz()">Next</button>`
+        }
     } else if (curr.correct != which && check) {
         alert("That's incorrect, try again!");
     }
