@@ -58,6 +58,7 @@ function checkAns()
 {
     if (answered) {
         alert("You already answered! Click the 'Next' button for the next question!");
+        return;
     }
     let check = document.querySelector('input[name="quiz-ans"]:checked');
     let which;
